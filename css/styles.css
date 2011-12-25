@@ -30,9 +30,11 @@ body {
   padding: 25px 15px;
   width: 680px;
 }
-#main .main-title {
+#main .main-title a {
   font-size: 48px;
   float: left;
+  color: #000000;
+  text-decoration: none;
 }
 #main .navigation {
   font-size: 24px;
@@ -82,7 +84,7 @@ body {
   width: 675px;
 }
 #main .content ul.posts li {
-  height: 135px;
+  height: 100px;
   margin: 5px 0px;
   font-size: 18px;
 }
@@ -100,6 +102,16 @@ body {
 #main .content ul.posts span.date {
   font-size: 14px;
   color: #0090ff;
+}
+#post h1.title {
+  font-size: 24px;
+  color: #f80;
+  margin: 10px 0px;
+}
+#post h4.title {
+  font-size: 16px;
+  color: #0090ff;
+  margin: 10px 0px;
 }
 #main .content ul.posts li img {
   height: 80px;
