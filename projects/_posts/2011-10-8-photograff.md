@@ -2,7 +2,7 @@
 layout: post
 title: PhotoGraff
 image: /img/preview/photograff.gif
-description: PhotoGraff is an HTML5-based canvas drawing application on Facebook for graffiti'ng on friends' photos and sharing them
+description: PhotoGraff is an HTML5 Canvas-based Drawing app on Facebook
 ---
 
 PhotoGraff was a pet project I worked on over one of my work terms that was due to
