@@ -75,6 +75,48 @@ body {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
+#main .content ul.posts {
+  list-style-type: none;
+  margin: 15px 0px;
+  padding: 5px 0px;
+  width: 675px;
+}
+#main .content ul.posts li {
+  height: 135px;
+  margin: 5px 0px;
+  font-size: 18px;
+}
+#main .content ul.posts a.title {
+  color: #f80;
+  text-decoration: none;
+}
+#main .content ul.posts a.title:hover {
+  text-decoration: underline;
+}
+#main .content ul.posts p.excerpt {
+  font-size: 14px;
+  color: #a0a0a0;
+}
+#main .content ul.posts span.date {
+  font-size: 14px;
+  color: #0090ff;
+}
+#main .content ul.posts li img {
+  height: 80px;
+  width: 80px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  border-color: #000;
+  border-width: 1px;
+  float:left;
+}
+#main .content ul.posts li .post-content {
+  margin: 5px 20px;
+  float: right;
+  width: 550px;
+}
 #about {
   float: right;
   background-color: #000000;
