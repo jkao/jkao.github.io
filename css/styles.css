@@ -168,6 +168,9 @@ body {
 #about a:active {
   color: #aaaaaa;
 }
+#about p.center {
+  text-align: center;
+}
 #footer {
   clear: both;
   text-align: center;
