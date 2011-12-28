@@ -48,14 +48,7 @@ a developer. I LOVE editing my text in VIM over any "Rich Text Editor"
 any day. Furthermore, it can be placed under source control, (i.e. -
 git).
 
-Want to publish a change?
-
-{% highlight git %}
-# Add the post, commit it and push!
-  git add .
-  git commit -m "Published my First Post!"
-  git push origin
-{% endhighlight %}
+Want to publish a change? Do a git add, commit and push and you're set!
 
 Something about that makes my inner nerd happy. :)
 
