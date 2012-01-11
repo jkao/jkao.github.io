@@ -50,7 +50,7 @@ more agile than most companies in the enterprise business.
 Staffing always seemed to be an issue in the company, as we
 attempted to find consultants of the required calibre and skillset for
 the project, although coming in as an intern I didn't really have any
-of thse frameworks under my belt, but I managed to pick it up pretty
+of these frameworks under my belt, but I managed to pick it up pretty
 quickly regardless, despite all the frustrations I had to deal with
 using sparse documentation at times.
 
