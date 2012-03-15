@@ -5,7 +5,9 @@ image: /img/preview/ny-bull-small.png
 description: Rants about working in New York and the culture during my summer
 ---
 
-![Typical Tourist-y Shot with the Wallstreet Bull](/img/wallstreet.png)
+<div class="center">
+  <img alt="Typical Tourist-y Shot with the Wallstreet Bull" src="/img/wallstreet.png" class="six-hundred" />
+</div>
 
 "We've decided that you can work in New York for the summer, give it a
 talk with your parents and we can move forward with this"
@@ -38,7 +40,9 @@ make it an easier read and discuss work and life as separate sections.
 
 Work
 ---
-![Infusion Logo](/img/infusion-logo.jpg)
+<div class="center">
+  <img alt="Infusion" src="/img/infusion-logo.jpg" class="five-hundred"  />
+</div>
 Work as a Software Consultant was pretty fun. I got a lot of
 opportunities to
 talk directly with clients, but also did a ton of coding from
@@ -80,14 +84,18 @@ since this is where I'll probably find what I've been looking for.
 
 Life and Culture in New York
 ---
-![Manhattan Bridge](/img/bridge.jpg)
+<div class="center">
+  <img alt="Manhattan Bridge" src="/img/bridge.jpg" />
+</div>
 
 Now comes the actual interesting part, haha. So what I've formulated up
 is that:
 
 If there's something you want to do, New York has it.
 
-![Hipsters are all over New York... even in Chinatown](/img/hipster.png)
+<div class="center">
+  <img alt="Hipsters are all over New York... even in Chinatown" src="/img/hipster.png" />
+</div>
 
 I really do mean that, but the best part of spending a long time in New
 York are all the experiences you end going through... not all the tourist-y
@@ -113,7 +121,9 @@ include:
 * Going to the Magic Johnson Harlem 9 Theater... surprisingly good seats
   and space and cheap, too, despite the ghetto name and location!
 
-![Sketchy People](/img/sketchy.jpg)
+<div class="center">
+  <img alt="Sketchy People" src="/img/sketchy.jpg" />
+</div>
 
 Coming from Toronto, I'm pretty used to the multicultural aspects of the
 city, but you can think of NY as a more lively, packed downtown Toronto.
@@ -124,7 +134,9 @@ Toronto restaurants). Food there, unless it's fast food, is
 considerably more expensive, but the quality of food in general is
 pretty high, especially if you're willing to pay for it.
 
-![Master Splinter was Sighted!](/img/splinter.png)
+<div class="center">
+  <img alt="Master Splinter was Sighted!" src="/img/splinter.png" />
+</div>
 
 Going on a subway itself was a pretty interesting experience... there're
 always trains running even at 3 in the morning, perfect for me being the

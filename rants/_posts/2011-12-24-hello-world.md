@@ -11,7 +11,9 @@ Intro
 This post serves to be a test placeholder, but also a good start of a
 blog post.
 
-![Jekyll](/img/jekyll.png)
+<div class="center">
+  <img alt="Jekyll" src="/img/jekyll.png" />
+</div>
 
 I've been blogging on posterous for a little bit and I must say that
 using [Jekyll](http://jekyllrb.com/) is a pretty refreshing experience. There are quite a few

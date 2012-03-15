@@ -5,7 +5,9 @@ image: /img/preview/learning-list.png
 description: Some learning goals for 2012 as a developer
 ---
 
-![What!? I have to change!?](/img/learning-list.gif)
+<div class="center">
+  <img src="/img/learning-list.gif" alt="What!? I have to change!?" />
+</div>
 
 Took a quick look at [this article](http://swanson.github.com/blog/2011/12/04/whats-on-your-learning-list.html)
 yesterday and it inspired me to brainstorm a few things off my head that

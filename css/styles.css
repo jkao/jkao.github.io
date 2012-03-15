@@ -179,3 +179,12 @@ body {
 div.comments {
   margin: 80px 0;
 }
+div.center {
+  text-align: center;
+}
+img.five-hundred {
+  width: 500px;
+}
+img.six-hundred {
+  width: 600px;
+}
