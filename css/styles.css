@@ -182,6 +182,15 @@ div.comments {
 div.center {
   text-align: center;
 }
+img.two-hundred {
+  width: 200px;
+}
+img.three-hundred {
+  width: 300px;
+}
+img.four-hundred {
+  width: 300px;
+}
 img.five-hundred {
   width: 500px;
 }

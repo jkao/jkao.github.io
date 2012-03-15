@@ -10,6 +10,10 @@ given that enough people have asked me about my choice in computers,
 I've decided to just write a quick article about it, given that it'll
 be more maintainable this way. :)
 
+<div class="center">
+  <img src="/img/mac/apple_rainbow_logo.jpeg" alt="Apple!" class="two-hundred" />
+</div>
+
 So I recently ditched a brand-new spanking T420 after approximately 8
 months of use, but with good reason - to spend even more money and
 purchase a Late-2011 Macbook Pro! ...don't sound convinced? Well here's
@@ -20,7 +24,7 @@ down to what you're looking for in a computer. Since people are starting
 to bash on me for using a Mac, I'll also list my complaints that I've
 had with other operating systems:
 
-1. Windows
+Windows
 ---
 So my major use cases on most machines go something like this:
 
@@ -57,7 +61,7 @@ hand gesture-centric focus on the operating system, but I would not pay
 several hundred dollars more for features that I could invest in another
 monitor or hardware to make up for it.
 
-2. Linux (Ubuntu, specifically)
+Linux (Ubuntu, specifically)
 ---
 
 Linux - what can I say. When I heard about Unity desktop and the first
@@ -102,14 +106,16 @@ My Mac
 
 So here are some things I've used to pimp up my MBP:
 
-1. RAM Upgrades
+RAM Upgrades
+===
 This is pretty essential - Apple charges you ~$200 more for 4 GB more of
 RAM, when you can just order it off of Amazon for ~$40! I highly
 recommend doing it yourself as it's a very simple and cheap way to get
 your MBP blazing fast, especially with multiple workspaces and a
 crapload of Chrome tabs.
 
-2. SSD
+SSD
+===
 I haven't done this yet, as they are darn expensive and the Asian floods
 have increased the price, but I've seen quite a few tempting
 purchase-worthy drives on Amazon.
