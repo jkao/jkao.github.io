@@ -47,7 +47,7 @@ extremely poor coding environment in Windows to be a problem until now,
 when I've gotten serious about it.
 
 <div class="center">
-  <img src="http://jeff-kao.com/img/mac/BSOD_Windows8.png" alt="Fancy new BSOD!" />
+  <img src="/img/mac/BSOD_Windows8.png" alt="Fancy new BSOD!" />
 </div>
 
 Sure, there's Visual Studio and .NET, and while I do find that C# > Java
