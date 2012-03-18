@@ -197,3 +197,8 @@ img.five-hundred {
 img.six-hundred {
   width: 600px;
 }
+pre {
+  text-align: center;
+  padding: 20px 0px;
+  background: #a0a0a0;
+}
