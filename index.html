@@ -7,9 +7,9 @@ layout: default
   <li>
     <img src="{{ post.image }}" />
     <div class="post-content">
+      <span class="date">{{ post.date | date_to_string }}</span> 
       <a class="title" href="{{ post.url }}">{{post.title}}</a>
       <p class="excerpt">{{ post.description }}</p>
-      <span class="date">{{ post.date | date_to_string }}</span> 
     </div>
   </li>
   {% endfor %}
@@ -20,9 +20,13 @@ layout: default
   <li>
     <img src="{{ post.image }}" />
     <div class="post-content">
-      <a class="title" href="{{ post.url }}">{{post.title}}</a>
-      <p class="excerpt">{{ post.description }}</p>
       <span class="date">{{ post.date | date_to_string }}</span> 
+      {% if post.link %}
+        <a class="title" href="{{ post.link }}">{{post.title}}</a>
+      {% else %}
+        <a class="title" href="{{ post.url }}">{{post.title}}</a>
+      {% endif %}
+      <p class="excerpt">{{ post.description }}</p>
     </div>
   </li>
   {% endfor %}

@@ -103,6 +103,7 @@ body {
 #main .content ul.posts span.date {
   font-size: 14px;
   color: #0090ff;
+  float: right;
 }
 #post h1.title {
   font-size: 24px;
