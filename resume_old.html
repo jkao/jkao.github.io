@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Jeffrey Kao | 2B Computer Engineering</title>
+        <title>Jeffrey Kao | 3A Computer Engineering</title>
         <!-- STYLES -->
         <style type="text/css">
             /*
@@ -18,7 +18,7 @@
             */
             html {
                 font-family:arial,sans-serif;
-                font-size:14px;
+                font-size:13px;
             }
             .body {
                 width:860px;
@@ -37,54 +37,42 @@
                 text-decoration:none;
             }
             a:hover {
-                text-decoration:underline;
+              text-decoration:underline;
+            }
+            em {
+              font-style: italic;
             }
             h1 {
-                font-size:32px;
-                font-weight:bold;
+              font-size:32px;
+              font-weight:bold;
             }
             h2 {
-                font-size:24px;
-                font-weight:bold;
+              font-size:24px;
+              font-weight:bold;
             }
             h3 {
-                font-size:18px;
-                font-weight:bold;
-                margin:20px 0 10px;
+              font-size:18px;
+              font-weight:bold;
+              margin:20px 0 10px;
             } 
             h4 {
-                font-size:16px;
-                font-weight:bold;
+              font-size:16px;
+              font-weight:bold;
             } 
             h1.name {
-                margin: 0 0 8px;
-                letter-spacing:1px;
-            }
-            div.skills-summary {
-                margin: 15px 0;
+              margin: 0 0 8px;
+              letter-spacing:1px;
             }
             ul.skill-set {
-                margin: 10px 0 0 25px;
+              display: inline-block;
+              margin: 0 25px;
+              font-size: 13px;
             }
             ul.skill-set li {
-                display:inline;
-                margin: 0 15px 0 0;
-            }
-            ul.skill-set .head {
-                font-weight:bold;
-            }
-            ul.skill-set-long {
-                margin: 10px 0 0 25px;
-            }
-            ul.skill-set-long li {
-                display:inline;
-                margin: 0 3px 0 0;
-            }
-            ul.skill-set-long .head {
-                font-weight:bold;
+              margin: 6px 0;
             }
             div.entry {
-                margin: 5px 0;
+                margin: 0 0 25px 0;
             }
             div.entry-title {
                 font-weight:bold;
@@ -95,6 +83,10 @@
             }
             div.job-date {
                 float:right;
+            }
+            div.job-summary {
+              margin: 10px 0;
+              font-weight:bold;
             }
             ul.entry-description {
                 margin:10px 0; 
@@ -116,171 +108,139 @@
         <!-- HEADING -->
         <div class="heading">
             <h1 class="name">Jeffrey Kao</h1>
-            <div class="meta">2B Computer Engineering</div>
+            <div class="meta">3A Computer Engineering</div>
             <div class="meta">Website: <a href="http://jeff-kao.com">http://jeff-kao.com</a></div>
             <div class="meta">E-mail: <a href="mailto:jeff.kao.000@gmail.com">&#106;&#101;&#102;&#102;&#46;&#107;&#97;&#111;&#46;&#48;&#48;&#48;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></div>
         </div>
         <!-- SKILLS -->
         <div class="skills-summary">
-            <h3>Technical Skills</h3>
-            <ul class="skill-set-long">
-                <li class="head">Languages:</li>
-                <li>Java</li>
-                <li>C#</li>
-                <li>JavaScript</li>
-                <li>Ruby</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>SQL</li>
-                <li>BASH</li>
-                <li>C/C++</li>
-                <li>ASM (M68K, x86)</li>
-                <li>Perl</li>
-                <li>PHP</li>
-                <li>MATLAB</li>
-                <li>VHDL</li>
-            </ul>
-            <ul class="skill-set">
-                <li class="head">Notable Frameworks:</li>
-                <li>ASP.NET (MVC &amp; WebForms)</li>
-                <li>Ruby on Rails</li>
-                <li>jQuery</li>
-                <li>Facebook Graph API</li>
-                <li>Blackberry UI API</li>
-            </ul>
-            <ul class="skill-set">
-                <li class="head">Development Environments:</li>
-                <li>Vim</li>
-                <li>Visual Studio</li>
-                <li>Eclipse</li>
-            </ul>
-            <ul class="skill-set">
-                <li class="head">Operating Systems:</li>
-                <li>Linux</li>
-                <li>Unix</li>
-                <li>Windows Server</li>
-            </ul>
-            <ul class="skill-set">
-                <li class="head">Source Control:</li>
-                <li>Git</li>
-                <li>Mercurial</li>
-                <li>Team Foundation Server</li>
-                <li>ClearCase Tools</li>
-            </ul>
-            <ul class="skill-set">
-                <li class="head">Databases:</li>
-                <li>SQL Server</li>
-                <li>MySQL</li>
-                <li>Sybase</li>
-                <li>SQLite</li>
-            </ul>
+          <h3>Technical Skills</h3>
+          <ul class="skill-set">
+            <li>Ruby</li>
+            <li>JavaScript (CoffeeScript)</li>
+            <li>SQL</li>
+            <li>HTML5 (HAML)</li>
+            <li>CSS3 (SASS)</li>
+          </ul>
+          <ul class="skill-set">
+            <li>Java</li>
+            <li>C#</li>
+            <li>C/C++</li>
+            <li>PHP</li>
+            <li>perl</li>
+          </ul>
+          <ul class="skill-set">
+            <li>Ruby on Rails</li>
+            <li>ASP.NET</li>
+            <li>Play Framework</li>
+            <li>Facebook Graph API</li>
+            <li>Blackberry UI API</li>
+          </ul>
+          <ul class="skill-set">
+            <li>jQuery</li>
+            <li>Backbone.js</li>
+            <li>git, hg, svn</li>
+            <li>Unix/Linux/OS X</li>
+            <li>MySQL, PostgreSQL, MongoDB</li>
+          </ul>
+          <ul class="skill-set">
+            <li>Heroku</li>
+            <li>AWS</li>
+            <li>Apache</li>
+            <li>nginx</li>
+            <li>IIS</li>
+          </ul>
         </div>
         <!-- WORK -->
         <div class="work">
             <h3>Work Experience</h3>
             <div class="entry">
-                <div class="job-date">May &#39;11 - Sept &#39;11</div>
-                <div class="entry-title"><a href="http://www.infusion.com">Infusion Development, Inc.</a> &mdash; Software Consultant</div>
-                <div class="job-location">New York, NY</div>
-                <ul class="entry-description">
-                    <li>
-                        <strong>AMD Browser Helper Object:</strong>
-                        <ul>
-                            <li>Helped develop a short-deadline Proof of Concept BHO for IE9 to scrape video to launch AMD Video Acceleration tools</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>NYC Department of Education Maintenance:</strong>
-                        <ul>
-                            <li>Worked directly with clients to maintain an existing electronic plan submission web application</li>
-                            <li>Tasks included: Client interfacing, Feature and Infrastructure development, Bug Fixes, Testing</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>NYC Department of Education iPlan Development:</strong>
-                        <ul>
-                            <li>Worked in a small Agile team of five consultants to develop a brand new version of above-mentioned application to be sold outside of NYC district</li>
-                            <li>Tasks included: Client interfacing and Requirements Design, Architecture (Database and MVC), Core Development (Backend and Frontend)</li>
-                        </ul>
-                    </li>
-                    <li><i>Technologies Used: C#, ASP.NET MVC & WebForms, JavaScript/jQuery, HTML5, CSS3, T-SQL/SQL Server, Microsoft Web Stack</i></li>
-                </ul>
+              <div class="job-date">Jan &#39;12 - April &#39;12</div>
+              <div class="entry-title"><a href="http://www.pagerduty.com">PagerDuty, Inc.</a> &mdash; Software Engineer</div>
+              <div class="job-location">San Francisco, CA</div>
+              <div class="job-summary">Iterated and shipped features at a  Y-Combinator funded startup.</div>
+              <ul class="entry-description">
+                <li>Converted Payment System to <strong>remove PCI Compliance requirements</strong>, removing need of costly security audits</li>
+                <li><strong>Automated a number of administration tasks</strong>, with metrics including <strong>conversions</strong> and <strong>automated payments</strong>, saving administration time</li>
+                <li>Performed <strong>major refactor on accounts system</strong>, while significantly <strong>increasing test coverage</strong> on legacy, un-tested code base</li>
+                <li>Migrated existing <strong>JavaScript to CoffeeScript</strong> with required infrastructure, as well as <strong>upgrading Backbone.js</strong> to 1.0 release candidate</li>
+                <li><strong>Won internal Hackday award</strong> for developing infrastructure to support <strong>internationalization</strong> on Marketing site</li>
+              </ul>
+              <em>Technologies Used: Ruby on Rails, MySQL, git, JavaScript/CoffeeScript, jQuery, Backbone.js, HAML, SASS, Twitter Bootstrap, AWS</em>
             </div>
             <div class="entry">
-                <div class="job-date">Aug &#39;10 - Dec &#39;10</div>
-                <div class="entry-title"><a href="http://www.sybase.com">Sybase, Inc.</a> &mdash; Software Developer</div>
-                <div class="job-location">Waterloo, ON</div>
-                <ul class="entry-description">
-                    <li>Developed build/infrastructure/install tools and applications to configure and set up high-performance, column-based database on a variety of Unix and Windows-based computing platforms</li>
-                    <li>As a side project, developed an automated test framework for Installation applications to be used across other Sybase Installation products</li>
-                    <li><i>Technologies Used: Java, ANT, Bash, Perl, Sybase/SQL, Linux/Unix, jUnit, InstallAnywhere</i></li>
-                </ul>
+              <div class="job-date">May &#39;11 - Sept &#39;11</div>
+              <div class="entry-title"><a href="http://www.infusion.com">Infusion Development, Inc.</a> &mdash; Software Consultant</div>
+              <div class="job-location">New York, NY</div>
+              <div class="job-summary">Worked with clients to deliver enterprise-grade solutions in an Agile environment.</div>
+              <ul class="entry-description">
+                <li>Built an <strong>education-funding review platform</strong> from ground-up for New York's Department of Education</li>
+                <li>Built a Browser Helper tool for AMD used to run AMD's desktop widgets</li>
+                <li>Maintained previous iteration of education-funding platform for the New York Department of Education</li>
+                <li><strong>Won internal company award</strong> for <strong>'Best Application of the Year'</strong></li>
+              </ul>
+              <em>Technologies Used: C#, T-SQL, Microsoft SQL Server, JavaScript/jQuery, ASP.NET MVC, ASP.NET WebForms, HTML/CSS, Windows API</em>
             </div>
             <div class="entry">
-                <div class="job-date">Jan &#39;10 - Aug &#39;10</div>
-                <div class="entry-title"><a href="http://www.ramsoft.com">RamSoft, Inc.</a> &mdash; Software QA</div>
-                <div class="job-location">Toronto, ON</div>
-                <ul class="entry-description">
-                    <li>Executed and documented results from regression, performance, capacity tests</li>
-                    <li><i>Technologies Used: Windows CLI/Batch, SQL</i></li>
-                </ul>
+              <div class="job-date">Aug &#39;10 - Dec &#39;10</div>
+              <div class="entry-title"><a href="http://www.sybase.com">Sybase, Inc.</a> &mdash; Software Developer</div>
+              <div class="job-location">Waterloo, ON</div>
+              <div class="job-summary">Built infrastructure tools for Sybase IQ product and team.</div>
+              <ul class="entry-description">
+                <li>Wrote Java plugins for installer tool, and bash/perl scripts to automate the Sybase IQ product dependencies</li>
+                <li>Built an <strong>automated test framework</strong> as a side project for installation tools</li>
+              </ul>
+              <em>Technologies Used: Java, bash, perl, XML, Sybase Database Suite, SQL</em>
+            </div>
+            <div class="entry">
+              <div class="job-date">Jan &#39;10 - Aug &#39;10</div>
+              <div class="entry-title"><a href="http://www.ramsoft.com">RamSoft, Inc.</a> &mdash; Software QA</div>
+              <div class="job-location">Toronto, ON</div>
+              <div class="job-summary">Worked with developers to test medical-imaging software.</div>
+              <em>Technologies Used: Windows CLI/Batch, SQL</em>
             </div>
         </div>
         <!-- PROJECTS -->
         <div class="projects">
-            <h3>Projects</h3>
-            <div class="entry">
-                <div class="entry-title">Shelfish</div>
-                <ul class="entry-description">
-                    <li>Developing Rails app as a bookmarking service to synchronize web media via simple bookmarklet system (eventually browser extensions)</li>
-                    <li>Building with Ruby on Rails, JavaScript/jQuery, MySQL, HTML/CSS</li>
-                    <li>Currently under initial development</li>
-                </ul>
-            </div>
-            <div class="entry">
-                <div class="entry-title">PhotoGraff</div>
-                <ul class="entry-description">
-                    <li>Developed Facebook application able to upload and draw on users' existing photos as well as a number of photo manipulations</li>
-                    <li>Programmed with HTML5 Canvas using jQuery, PHP, and Facebook PHP/JavaScript SDK</li>
-                    <li>Visit at: <a href="http://photograff.me">photograff.me</a>
-                </ul>
-            </div>
-            <div class="entry">
-                <div class="entry-title">Blackberry Mobile Application Development</div>
-                <ul class="entry-description">
-                    <li>Developed several small BlackBerry applications to gain knowledge of the platform</li>
-                    <li>Programmed in Java with Blackberry UI API utilizing Maps/UI features</li>
-                </ul>
-            </div>
-        </div>
-        <!-- EDUCATION -->
-        <div class="education">
-            <h3>Education</h3>
-            <div class="entry">
-                <div class="job-date">Sept &#39;09 - May &#39;14</div>
-                <div class="entry-title">University of Waterloo - BASc Computer Engineering</div>
-                <ul class="entry-description">
-                    <li>UW Intramural Sports (Soccer, Volleyball)</li>
-                    <li>UW Badminton Club</li>
-                    <li>UW Judo Club</li>
-                </ul>
-            </div>
+          <h3>Projects</h3>
+          <div class="entry">
+            <div class="entry-title">Mediac</div>
+            <ul class="entry-description">
+              <li>Social dynamic content sharing platform. Under construction.</li>
+              <li><em>Technologies Used: Ruby on Rails 3.2, Twitter Bootstrap, MySQL, Heroku</em></li>
+            </ul>
+          </div>
+          <div class="entry">
+            <div class="entry-title">PhotoGraff</div>
+            <ul class="entry-description">
+              <li>HTML5 Facebook application for drawing and editing photos on Facebook.</li>
+              <li>
+                <em>
+                  Technologies Used: Facebook Graph API, JavaScript &amp; jQuery, HTML5 Canvas, PHP
+                </em>
+              </li>
+            </ul>
+          </div>
+          <div class="entry">
+            <div class="entry-title">GitHub</div>
+            <ul class="entry-description">
+              <li>Other projects and recent code samples can be found on <a href="https://github.com/jkao">https://github.com/jkao</a>.</li>
+            </ul>
+          </div>
         </div>
         <!-- NOTABLE INFORMATION -->
         <div class="notable">
-            <h3>Notable Information</h3>
-            <div class="entry">
-                <ul class="entry-description">
-                    <li>Able to communicate in English, Cantonese, currently Learning Japanese</li>
-                    <li>Interested in Entrepreneurship, enjoy going to Meet-ups to network and meet with new people</li>
-                    <li>RCM Grade 9 Piano (Honours)</li>
-                    <li>RCM Grade 4 Theory and prerequisites (First Class Honours)</li>
-                    <li>Duke of Edinburgh Award (Silver)</li>
-                    <li>Chief Scout&#39;s Award</li>									
-                </ul>
-            </div>
+          <h3>Notable Information</h3>
+          <div class="entry">
+            <ul class="entry-description">
+              <li>Able to communicate in English, Cantonese, some Japanese</li>
+              <li>Member of UW Muay Thai Club</li>
+              <li>Aspiring Entrepreneur</li>
+            </ul>
+          </div>
         </div>
+
         <!-- Ping, Muahaha -->
-        <img src="http://jobminestats.appspot.com/Ping/ag5zfmpvYm1pbmVzdGF0c3IMCxIFUGl4ZWwYoR8M.gif" height="0" width="0"/>
+        <img src="http://jobminestats.appspot.com/Ping/ag5zfmpvYm1pbmVzdGF0c3IMCxIFUGl4ZWwYoR8M.gif" height="0" width="0" />
     </body>
 </html>
