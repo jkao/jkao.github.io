@@ -182,7 +182,7 @@ old asian men gambling and relatively cheap food. You can get pound of
 Dim Sum and still pay less than $10 for take out. :)
 
 <div class="center">
-  <img src="/img/sf/dimsum.jpg" alt="Sketchy Dim Sum is the best" class="three-hundred" />
+  <img src="/img/sf/dimsum.JPG" alt="Sketchy Dim Sum is the best" class="three-hundred" />
 </div>
 <em class="center">It might look sketchy, but that's how you know the Dim Sum is good! (..and cheap ;) )</em>
 
@@ -264,7 +264,7 @@ I saw this when I saw a crazed crack-lady
    the Tenderloin is REALLY good)
 
 <div class="center">
-  <img src="/img/sf/ghetto.jpg" alt="Broken window" class="three-hundred" />
+  <img src="/img/sf/ghetto.JPG" alt="Broken window" class="three-hundred" />
 </div>
 <em class="center">Maybe the owner just left their keys in the car...</em>
 
