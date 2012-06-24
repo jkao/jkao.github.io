@@ -183,6 +183,10 @@ div.comments {
 div.center {
   text-align: center;
 }
+em.center {
+  text-align: center;
+  display: block;
+}
 img.two-hundred {
   width: 200px;
 }
