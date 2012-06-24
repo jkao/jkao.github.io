@@ -21,12 +21,12 @@ Francisco** at a **Y-Combinator** startup called
 For posts on travel (namely co-op), I like to separate the content in to
 two parts: [Work](#work) and [Living](#living). So I'll start off with work, as I did with my [New York Post](/rants/2011/12/26/summer-in-new-york.html):
 
+<a name="work"></a>
 # Working in a San Francisco Startup
 
 <div class="center">
   <img src="/img/sf/pagerduty.png" alt="PagerDuty!" class="three-hundred" />
 </div>
-<a name="work"></a>
 
 My past internships have been at relatively large companies so it was a
 good change to work at a startup. I had some expectations coming in that
@@ -40,7 +40,7 @@ things at the same time.
 </div>
 
 ...and well, really nobody actually does that. If you're working like
-that, you're definitely doing something wrong. Working like that doesn't
+that, you're definitely **doing something wrong**. Working like that doesn't
 really scale, and I definitely felt that when I was [working as a
 consultant in New York](/rants/2011/12/26/summer-in-new-york.html).
 
@@ -49,20 +49,20 @@ startup felt like in San Francisco:
 
 ## Work Content
 
-When you work at a startup, you're GUARANTEED to have an impact due to
+When you work at a startup, you're **guaranteed** to have an impact due to
 the nature of small organizations. While at first it might be
-intimidating, it's also something that you learn to love and will
-definitely miss in larger organizations.
+intimidating, it's also something that you learn to love and **will
+definitely miss in larger organizations**.
 
-Personally, I love work that directly impacts customers and clients. I
+Personally, I love work that **directly impacts customers and clients**. I
 chose this job at a startup and a job as a consultant last term for that reason. It's
-great to be a good engineer, and it's even better when you can apply
-those engineering skills to directly impact the business. Larger
-companies tend to give employees, ESPECIALLY interns, projects that might
-be cool, but tend to be "nice-to-have's". To me, that's just saying that:
+great to be a **good engineer**, and it's even better when you can apply
+those engineering skills to **directly impact the business**. Larger
+companies tend to give employees, ESPECIALLY interns, projects that **might
+be cool**, but tend to be **"nice-to-have's"**. To me, that's just saying that:
 
-1. They don't really trust you and your abilities
-2. It wouldn't really matter if you did anything or finished that
+1. They **don't really trust you and your abilities**
+2. It **wouldn't really matter** if you did anything or finished that
    project
 
 While working at a startup, worse comes to worse, even if they felt
@@ -74,18 +74,19 @@ direct impact to the business.
 
 The result of this is that:
 
-1. You get a lot of ownership
-2. You learn more from more responsibilities
-3. You get treated like another fellow full-time employee
-4. Your opinions do matter and help shape up the solutions you design
-5. You're also responsible when \*\*\*\* hits the fan
+1. You get a lot of **ownership**
+2. You **learn more** from more responsibilities
+3. You get treated like **another fellow full-time employee**
+4. Your **opinions do matter** and help shape up the solutions you design
+5. You're also **responsible when \*\*\*\* hits the fan**
 
 These are all aspects that will shape you in to a good engineer. More
-importantly, it gives you a lot of insight on to product development,
-and the business side of things. Those are the aspects that make an
-engineer well-suited not just for entrepreneurship, but also for
+importantly, it gives you a lot of insight on to **product development**,
+and the **business side of things**. Those are the aspects that make an
+engineer well-suited not just for **entrepreneurship**, but also for
 developing products that keep clients and customers in mind. That's a
-key and fundamental basis for determining success in a product.
+key and fundamental basis for determining success in a product; being
+**customer-oriented**.
 
 <div class="center">
   <img src="/img/sf/pdhero.jpg" alt="PagerDuty Hero!" class="three-hundred" />
@@ -93,20 +94,20 @@ key and fundamental basis for determining success in a product.
 <em class="center">PagerDuty to the Rescue!</em>
 
 Having said this, there are definitely aspects that aren't as great.
-Obviously, having a lot of ownership means that when things break,
-you'll be the one to take care of them. Additionally, you'll find that a
-lot of work that you end up doing is work that NEEDS to be done. This
+Obviously, having a lot of ownership means that **when things break,
+you'll be the one to take care of them**. Additionally, you'll find that a
+lot of work that you end up doing is **work that needs to be done**. This
 could potentially mean that the things you have to do may not be as
 glorious, but that shouldn't stop you. 
 
 Naturally, there are a TON
 of things that need to get done at a small company and you'll find that
-there's a backlog of cool things you can get around to working on if you 
+there's a **backlog of cool things** you can get around to working on if you 
 decide to take initiatitive to do it. In fact, one of the best ways to
-do this is through Hack-a-thons if your company hosts them. One of the
+do this is through **Hackathons** at your company. One of the
 things that I felt would be cool to see for PagerDuty was
 internationalizing the site and seeing how it would affect conversions,
-so I migrated the Rails stack to support i18n and VOILA, I won the
+so I migrated the Marketing site to **support i18n** and voila I won the
 Hack-day trophy. :)
 
 <div class="center">
@@ -115,26 +116,26 @@ Hack-day trophy. :)
 <em class="center">Celebrated my Internationalization hack winning with my name in
 Japanese!</em>
 
-So to sum it up, if you don't like to be in a fast-moving environment
-where the things you do are directly your responsibility, then a startup
-might not be the ideal place to work. I'd like to think of it as a
-high-risk, high-reward sort of job.
+So to sum it up, if you don't like to be in a **fast-moving
+environment** where the things you do are **directly your responsibility**, 
+then a startup might not be the ideal place to work. I'd like to think of it as a
+**high-risk, high-reward** sort of job.
 
 ## Work Culture
 
-Another large aspect I look for in a company is its culture. Although
+Another large aspect I look for in a company is its **culture**. Although
 engineering ability is an incredibly important indicator of success at a
-technical position in a startup, culture is probably just as important.
+technical position in a startup, **culture is probably just as important**.
 You're going to be working with a select few engineers day-to-day with a
 ton of stuff to do. You'd better make sure that when things start
-breaking, your team will come out strong. 
+breaking, **your team will come out strong**. 
 
 A strong culture is the thing that determines success through stressful 
 situations, and having ever-present technical risks
 day-to-day definitely makes hiring for culture almost, if not as equally
 important, as hiring for technical ability in engineering. A good team
-is one that collaborates, communicates, and is transparent from
-top-down.
+is one that **collaborates, communicates, and is transparent from
+top-down**.
 
 <div class="center">
   <img src="/img/sf/roof.jpg" alt="Hanging out on the PagerDuty Roof!" class="six-hundred" />
@@ -146,15 +147,15 @@ that we'd hang out after work. It's not just that your co-workers are
 your co-workers, but they're your friends. This is something you'd
 definitely want to encourage in any organization. It's kind of like a
 team sport; just as you wouldn't want to let down your team, you'd feel
-the same way with your friends. Ultimately, that leads to happier, more
-productive output from your team.
+the same way with your startup buddies. Ultimately, that leads to **happier, more
+productive output** from your team.
 
-# Living in San Francisco
 <a name="living"></a>
+# Living in San Francisco
 
 I'm assuming most of you guys have skipped to this section, as the
-question in everybody's mind is: What's it like to live in San
-Francisco?
+question in everybody's mind is: **What's it like to live in San
+Francisco?**
 
 <div class="center">
   <img src="/img/sf/baybridge2.jpg" alt="Golden Gate's little brother,
@@ -166,8 +167,8 @@ the Bay Bridge!" class="five-hundred" />
 
 As one of the "big cities",
 San Francisco still has some night life and a few nice restaurants, but
-definitely pales in comparison to New York in terms of number of city-ish things to do (i.e. - bars/restaurants/etc). However, it's definitely unique 
-for having the Bay and has a lot of awesome things in that aspect. 
+definitely **pales in comparison to New York in terms of number of city-ish things to do** (i.e. - bars/restaurants/etc). However, it's definitely **unique** 
+for having **the Bay** and has a lot of awesome things in that aspect. 
 
 <div class="center">
   <img src="/img/sf/bow.jpg" alt="Golden Gate's little brother,
@@ -175,8 +176,8 @@ the Bay Bridge!" class="four-hundred" />
 </div>
 <em class="center">Quirky</em>
 
-Being on the west coast, it also means there's a significant Asian
-presence there. San Francisco has both a Chinatown and Japantown.
+Being on the west coast, it also means there's a **significant Asian
+presence** there. San Francisco has both a **Chinatown and Japantown**.
 Chinatown is a pretty standard Chinatown, with its fair share of sketchy
 old asian men gambling and relatively cheap food. You can get pound of
 Dim Sum and still pay less than $10 for take out. :)
@@ -187,8 +188,8 @@ Dim Sum and still pay less than $10 for take out. :)
 <em class="center">It might look sketchy, but that's how you know the Dim Sum is good! (..and cheap ;) )</em>
 
 However, after being in
-New York and San Francisco, I still feel that Asian cuisine in
-Toronto still trumps both, all at a cheaper cost, too. Thai food in San
+New York and San Francisco, I still feel that **Asian cuisine in
+Toronto still trumps both**, all at a cheaper cost, too. Thai food in San
 Francisco is pretty excellent and would be the exception. Japantown is
 quite a bit more unique since there really aren't a lot of them in North
 America, and you can definitely see it when you're there. All in all,
@@ -202,12 +203,12 @@ regardless, it's a nice illusion :P
 </div>
 <em class="center">Japantown during the Cherry Blossom Festival</em>
 
-People in San Francisco are generally really laid back and liberal.
+People in San Francisco are generally **really laid back and liberal**.
 People aren't quite as materialistic as in New York, but they're also a 
 little quirky
 sometimes. They're really accepting and you can find great conversations with
-people randomly, and you'll find that people are generally helpful and
-nice. Of course there are always exceptions, but this is what I've felt
+people randomly, and you'll find that **people are generally helpful and
+nice**. Of course there are always exceptions, but this is what I've felt
 in general.
 
 <div class="center">
@@ -219,7 +220,7 @@ Shack FTW!</em>
 Also, as much as I'd like to think that everything in
 Hacker News is true, if you tell most people you're working at a startup, 
 they probably won't be impressed and won't have any idea what you're
-talking about. San Francisco is a hotbed for tech startups, but it also
+talking about. San Francisco is a **hotbed for tech startups**, but it also
 has more normal people than what seems to be hyped about online. 
 (this is supposed to be a good thing :P) I took a Japanese class while I
 was there and expected everybody to be an engineer, but it was a refreshing
@@ -247,20 +248,21 @@ San Francisco rent is unreasonably high, so naturally there will be a
 pretty large ghetto. Some unique aspects that I found wandering the
 Tenderloin include:
 
-1. Realizing that the dog crap left on the ground.. usually didn't
-   belong to dogs
-2. People stand around at 3 AM standing at street-corners and literally
-   do NOTHING except stare. They don't talk or anything or act ghetto
-   like in the movies or Harlem, they just stand there. Hm. 
+1. Realizing that the dog crap left on the ground.. **usually didn't
+   belong to dogs**
+2. People stand around at 3 AM standing at street-corners and **literally
+   do NOTHING** except stare. They don't talk or anything or act ghetto
+   like in the movies or Harlem, they just stand there on street
+   corners. Kind of strange. Hm.
 3. One exception to number 2 is that everybody in the neighbourhood runs
    out to the streets and gets rowdy when there's a fight going on. 
    If there's a fight,
    it literally changes from two people on the corner of the street to
-   the whole neighbourhood in the next 5 seconds. 
+   the whole neighbourhood in the next 5 seconds.
 I saw this when I saw a crazed crack-lady
    fight some homeless dude. Of course, the crack-lady won, but I didn't
    stay too long fearing for my safety.
-4. Pho tastes the best when you fear for your life. (i.e. - the Pho in
+4. Pho tastes the best when you **fear for your life**. (i.e. - the Pho in
    the Tenderloin is REALLY good)
 
 <div class="center">
