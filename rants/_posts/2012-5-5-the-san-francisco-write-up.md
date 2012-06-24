@@ -88,8 +88,9 @@ developing products that keep clients and customers in mind. That's a
 key and fundamental basis for determining success in a product.
 
 <div class="center">
-  <img src="/img/sf/stress.jpg" alt="AHHH!" class="three-hundred" />
+  <img src="/img/sf/pdhero.jpg" alt="PagerDuty Hero!" class="three-hundred" />
 </div>
+<em class="center">PagerDuty to the Rescue!</em>
 
 Having said this, there are definitely aspects that aren't as great.
 Obviously, having a lot of ownership means that when things break,
