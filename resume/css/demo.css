@@ -1,0 +1,161 @@
+html {
+  font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, 'Lucida Grande', sans-serif;
+  color: #555;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #EEE;
+}
+h1 {
+  font-size: 48px;
+  color: #000;
+}
+h2 {
+  font-size: 35px;
+  color: #000;
+}
+h3 {
+  font-size: 28px;
+  color: #000;
+}
+h4 {
+  font-size: 20px;
+  color: #000;
+}
+h5 {
+  font-size: 18px;
+  color: #000;
+}
+h6 {
+  font-size: 16px;
+  color: #000;
+}
+#resume-body {
+  background-color: #FFF;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 25px;
+}
+#resume-body a {
+  color: #2A85E8;
+}
+#resume-body a:hover {
+  text-decoration: underline;
+}
+#resume-body h3 {
+  margin: 10px 0 5px;
+}
+#resume-header {
+  background-color: #2A85E8;
+  color: #FFF;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+#resume-header h1 {
+  padding-left: 15px;
+}
+#resume-header h1 {
+  color: #FFF;
+  font-size: 64px;
+}
+#resume-header .meta {
+  font-size: 18px;
+  margin: 5px 0;
+}
+#resume-header a {
+  color: #FFF;
+}
+#resume-header a:hover {
+  text-decoration: underline;
+}
+#work-col {
+  border-right: solid 1px;
+}
+#skills-col {
+  width: 298px;
+}
+.skills ul {
+  font-size: 14px;
+  padding: 5px 0;
+}
+.skills li {
+  padding: 1px 0;
+}
+.job-title {
+  color: #000;
+  font-size: 19px;
+  font-weight: bold;
+}
+.job-header {
+  color: #000;
+  font-weight: bold;
+  font-size: 17px;
+}
+.job-entry {
+  margin: 12px 0 35px;
+}
+.job-date {
+  font-size: 14px;
+}
+.job-meta {
+  font-size: 12px;
+}
+.job-location {
+  font-style: italic;
+}
+.job-site {
+  padding-left: 15px;
+}
+.job-site a {
+  color: #2A85E8;
+}
+.job-site a:hover {
+  text-decoration: underline;
+}
+.job-desc {
+  margin-top: 5px;
+}
+.job-desc ul {
+  margin-top: 5px;
+  font-size: 14px;
+  margin-left: 20px;
+  list-style: disc;
+}
+.job-desc ul ul {
+  margin: 0;
+  margin-left: 20px;
+  list-style: circle;
+}
+.job-skills {
+  margin-top: 5px;
+  font-size: 13px;
+}
+.projects {
+  font-size: 14px;
+  margin: 20px 0;
+}
+.projects ul {
+  list-style: disc;
+  margin: 5px 0 5px 15px;
+}
+.projects .tech {
+  font-size: 13px;
+  margin: 5px 0;
+}
+.notable-info  {
+  margin: 20px 0;
+}
+.notable-info ul {
+  margin: 5px 0 5px 10px;
+  list-style: circle;
+}
+#education {
+  font-size: 14px;
+}
+#education ul {
+  margin: 5px 0 5px 10px;
+  list-style: circle;
+}
