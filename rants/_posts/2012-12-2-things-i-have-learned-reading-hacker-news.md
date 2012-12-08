@@ -81,7 +81,7 @@ Learn to Build Your Own Opinion
 
 Yet another category of posts tends to be things about startups getting
 acquired, people launching their projects, and in general news about the
-latest tech gadgest/cloud services/etc. As the internet generally goes,
+latest tech gadgets/cloud services/etc. As the internet generally goes,
 there's a lot of hate and butt-kissing. Even with the HN group, you'll
 find that people may have strong opinions that you don't agree with or
 totally agree with. Some people have opinions without justification,
