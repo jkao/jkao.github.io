@@ -207,3 +207,13 @@ pre {
   padding: 20px 0px;
   background: #a0a0a0;
 }
+.yes {
+  color: #0D9E00;
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+.nope {
+  color: #FF0000;
+  font-size: 24px;
+  margin-bottom: 14px;
+}
