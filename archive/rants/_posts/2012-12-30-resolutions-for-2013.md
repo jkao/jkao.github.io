@@ -112,7 +112,7 @@ just too lazy. So for 2013, I'll set fewer, focused goals.
 
 ### 6. Go to at least three developer meetups/conferences
 
-### 7. Try out Cassandara/Riak (high volume data stores)
+### 7. Try out Cassandra/Riak (high volume data stores)
 
 ### 8. Learn Map/Reduce and techniques for building out "Big Data" analytics systems
 
