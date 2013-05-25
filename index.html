@@ -1,33 +1,89 @@
----
-layout: default
----
-<span class="title">My Rants</span>
-<ul class="posts rants">
-  {% for post in site.categories.rants %}
-  <li>
-    <img src="{{ post.image }}" />
-    <div class="post-content">
-      <span class="date">{{ post.date | date_to_string }}</span> 
-      <a class="title" href="{{ post.url }}">{{post.title}}</a>
-      <p class="excerpt">{{ post.description }}</p>
-    </div>
-  </li>
-  {% endfor %}
-</ul>
-<span class="title">Projects</span>
-<ul class="posts projects">
-  {% for post in site.categories.projects %}
-  <li>
-    <img src="{{ post.image }}" />
-    <div class="post-content">
-      <span class="date">{{ post.date | date_to_string }}</span> 
-      {% if post.link %}
-        <a class="title" href="{{ post.link }}">{{post.title}}</a>
-      {% else %}
-        <a class="title" href="{{ post.url }}">{{post.title}}</a>
-      {% endif %}
-      <p class="excerpt">{{ post.description }}</p>
-    </div>
-  </li>
-  {% endfor %}
-</ul>
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="Hi, I'm Jeff Kao. Welcome to my World.">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Title -->
+        <title>Hi, I'm Jeff Kao.</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:100|Oswald' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <!-- Woohoo! -->
+        <div id="about">
+          <h1>HI, I'M JEFF KAO.</h1>
+
+          <p>
+            I'm a tech enthusiast and wannabe startup entrepreneur.
+            I'm pretty set on taking out the "wannabe" part in the near future.
+          </p>
+
+          <p>
+            For now, I'm working
+            <a href="http://foursquare.com" target="_blank">@foursquare</a>
+            in New York and finishing up my
+            <a href="http://ece.uwaterloo.ca" target="_blank">degree</a>.
+            A masters may not be too farfetched.
+          </p>
+
+          <p>
+          Talk to me about:
+          </p>
+          <ul class="talk">
+            <li>#startups</li>
+            <li>#software</li>
+            <li>#vim</li>
+            <li>#guitar</li>
+            <li>#metal</li>
+            <li>#jazz</li>
+            <li>#languages</li>
+            <li>#travel</li>
+            <li>#kickingass</li>
+          </ul>
+
+          <p>
+            Interesting ( ? ) Links:
+          </p>
+
+          <ul class="links">
+            <li>
+              <a href="http://jeff-kao.com/resume.html" target="_blank">resume</a>
+            </li>
+          </ul>
+          <ul class="links">
+            <li>
+              <a href="https://twitter.com/j_ckao" target="_blank">twitter</a>
+            </li>
+            <li>
+              <a href="https://github.com/jkao" target="_blank">github</a>
+            </li>
+            <li>
+              <a href="http://www.linkedin.com/profile/view?id=65997901" target="_blank">linkedin</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- JavaScript depedencies -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.3/jquery.backstretch.min.js"></script>
+        <script>
+            // Google Analytics
+            var _gaq=[['_setAccount','UA-27939779-1'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+
+            // Background Image
+            var bgUrl =
+              "https://dl.dropboxusercontent.com/u/25048900" +
+              "/jkao.github.com/twinpeaks_mini.jpg";
+            $.backstretch(bgUrl);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+/*
+Copyright (c) 2011, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.9.0
+*/
+body{margin:10px}h1{font-size:138.5%}h2{font-size:123.1%}h3{font-size:108%}h1,h2,h3{margin:1em 0}h1,h2,h3,h4,h5,h6,strong,dt{font-weight:bold}optgroup{font-weight:normal}abbr,acronym{border-bottom:1px dotted #000;cursor:help}em{font-style:italic}del{text-decoration:line-through}blockquote,ul,ol,dl{margin:1em}ol,ul,dl{margin-left:2em}ol{list-style:decimal outside}ul{list-style:disc outside}dl dd{margin-left:1em}th,td{border:1px solid #000;padding:.5em}th{font-weight:bold;text-align:center}caption{margin-bottom:.5em;text-align:center}sup{vertical-align:super}sub{vertical-align:sub}p,fieldset,table,pre{margin-bottom:1em}button,input[type="checkbox"],input[type="radio"],input[type="reset"],input[type="submit"]{padding:1px}img{-ms-interpolation-mode:bicubic}
+
+/*
+ * Fun starts here.
+ */
+#about {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: block;
+  font-size: 11px;
+  color: #fff;
+  height: 599px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 420px;
+  word-wrap: break-word;
+}
+
+#about h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 48px;
+  margin: 12px 0;
+}
+
+#about p {
+  font-family: 'Lato', sans-serif;
+  font-size: 19px;
+  margin: 25px 0 10px;
+  word-spacing: 3px;
+}
+
+#about a {
+  color: rgb(0, 157, 255);
+  font-style: bold;
+  text-decoration: none;
+}
+
+#about ul {
+  font-family: 'Lato', sans-serif;
+  font-size: 19px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 15px;
+  word-spacing: 5px;
+}
+
+.talk li {
+  display: inline;
+  padding-right: 8px;
+}
+
+#about ul.links {
+  padding-bottom: 5px;
+}
+#about ul.links li {
+  display: inline;
+}

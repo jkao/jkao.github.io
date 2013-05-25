@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<span class="title">My Rants</span>
+<ul class="posts rants">
+  {% for post in site.categories.rants %}
+  <li>
+    <img src="{{ post.image }}" />
+    <div class="post-content">
+      <span class="date">{{ post.date | date_to_string }}</span> 
+      <a class="title" href="{{ post.url }}">{{post.title}}</a>
+      <p class="excerpt">{{ post.description }}</p>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+<span class="title">Projects</span>
+<ul class="posts projects">
+  {% for post in site.categories.projects %}
+  <li>
+    <img src="{{ post.image }}" />
+    <div class="post-content">
+      <span class="date">{{ post.date | date_to_string }}</span> 
+      {% if post.link %}
+        <a class="title" href="{{ post.link }}">{{post.title}}</a>
+      {% else %}
+        <a class="title" href="{{ post.url }}">{{post.title}}</a>
+      {% endif %}
+      <p class="excerpt">{{ post.description }}</p>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
