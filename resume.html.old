@@ -104,7 +104,7 @@
       }
       .job-header {
         color: #000;
-        //font-weight: bold;
+        font-weight: bold;
         font-size: 17px;
       }
       .job-entry {
@@ -164,7 +164,6 @@
       .notable-info ul {
         margin: 5px 0 5px 10px;
         list-style: circle;
-        font-size: 14px;
       }
       #education {
         font-size: 14px;
@@ -188,43 +187,7 @@
         </div>
       </div>
       <div class="grid_8" id="work-col">
-        <!--<h2>Work Experience</h2>-->
-        <div class="job-entry">
-          <div class="grid_6 alpha job-title">
-            Foursquare - Software Engineer (Intern)
-          </div>
-          <div class="grid_2 omega job-date">Apr. '13 - Aug. '13</div>
-          <div class="clear"></div>
-          <div class="job-meta">
-            <span class="job-location">New York, NY</span>
-            <span class="job-site">(<a target="_blank" href="http://foursquare.com">http://foursquare.com</a>)</span>
-          </div>
-          <div class="clear"></div>
-          <div class="job-desc">
-            <div class="job-header">Worked on launching self-service ads for merchants.</div>
-            <ul>
-              <li>Worked on core ads and payments tech across distributed services.</li>
-              <li>Used <strong>data mining techniques</strong> to build budget and bid recommendations for ad campaigns.</li>
-            </ul>
-          </div>
-          <div class="grid_8 alpha job-skills">[Scala, MongoDB, Hadoop, Finagle, Lift, Python]</div>
-        </div>
-        <div class="clear"></div>
-        <div class="job-entry">
-          <div class="grid_6 alpha job-title">
-            Freelance Consultant
-          </div>
-          <div class="grid_2 omega job-date">Ongoing</div>
-          <div class="clear"></div>
-          <div class="job-desc">
-            <div class="job-header">Solving client problems with software solutions and business strategy.</div>
-            <ul>
-              <li>Strategized and built cloud device software prototype for an <a href="http://westonexpressions.com" target="_blank">advertising startup</a> leading to the securing of a large seed round.</li>
-              <li>Built an internal job board for a non-profit organization.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="clear"></div>
+        <h2>Work Experience</h2>
         <div class="job-entry">
           <div class="grid_6 alpha job-title">
             Inkling - Platform Engineer (Intern)
@@ -258,7 +221,7 @@
           </div>
           <div class="clear"></div>
           <div class="job-desc">
-            <div class="job-header">Shipped code for IT on-call alerting platform at Y-Combinator startup.</div>
+            <h6>Shipped code for IT on-call alerting platform at Y-Combinator startup.</h6>
             <ul>
               <li>Re-built payment services to <strong>avoid expensive PCI-Compliance</strong> requirements</li>
               <li><strong>Automated time-consuming administrative tasks</strong></li>
@@ -281,7 +244,7 @@
           </div>
           <div class="clear"></div>
           <div class="job-desc">
-            <div class="job-header">Worked with clients to deliver high-quality software solutions.</div>
+            <h6>Worked with clients to deliver high-quality software solutions.</h6>
             <ul>
               <li>Built a <strong>million-dollar funding platform</strong> for New York Department of Education:
               <ul>
@@ -305,7 +268,7 @@
           </div>
           <div class="clear"></div>
           <div class="job-desc">
-            <div class="job-header">Built infrastructure tools for Sybase IQ product and team.</div>
+            <h6>Built infrastructure tools for Sybase IQ product and team.</h6>
             <ul>
               <li>Built an automated installer test framework as a side-project</li>
             </ul>
@@ -325,7 +288,7 @@
           </div>
           <div class="clear"></div>
           <div class="job-desc">
-            <div class="job-header">Worked with developers to test medical-imaging software.</div>
+            <h6>Worked with developers to test medical-imaging software.</h6>
           </div>
           <div class="grid_8 alpha job-skills">[SQL, batch]</div>
         </div>
@@ -341,7 +304,7 @@
           </div>
           <div class="clear"></div>
           <div class="job-desc">
-            <div class="job-header">Performed Research on an Atmospheric Pressure Plasma Jet</div>
+            <h6>Performed Research on an Atmospheric Pressure Plasma Jet</h6>
             <ul>
               <li>Researched various cost-effective methods of decomposing Zirconium compounds to create Zirconium Tert-Butoxide used to coat reactor walls</li>
               <li>Presented findings to AECL staff at the end of term</li>
@@ -355,24 +318,23 @@
           <div class="grid_1 alpha" style="width:35px;">
             <ul>
               <li>Ruby</li>
-              <li>Python</li>
-              <li>Scala</li>
               <li>Java</li>
+              <li>SQL</li>
+              <li>Scala</li>
             </ul>
           </div>
           <div class="grid_1 omega" style="width:35px;">
             <ul>
+              <li>Python</li>
               <li>C#</li>
               <li>C</li>
-              <li>SQL</li>
             </ul>
           </div>
           <div class="clear"></div>
           <ul>
             <li>Ruby on Rails</li>
-            <li>Play</li>
-            <li>Finagle</li>
             <li>Tornado</li>
+            <li>Play</li>
             <li>ASP.NET MVC</li>
           </ul>
           <ul>
@@ -398,10 +360,9 @@
         </div>
         <div class="grid_1 omega skills">
           <ul>
-            <li>PostgreSQL</li>
             <li>MySQL</li>
+            <li>PostgreSQL</li>
             <li>MongoDB</li>
-            <li>Cassandra</li>
           </ul>
           <ul>
             <li>memcached</li>
@@ -416,32 +377,32 @@
           </ul>
         </div>
         <div class="clear"></div>
-        <!--<div class="projects">-->
-          <!--<h3>Projects</h3>-->
-          <!--<h6>OMGiWant - Gift Recommendation</h6>-->
-          <!--<div class="grid_4 alpha">-->
-            <!--<ul>-->
-              <!--<li>In the works.</li>-->
-            <!--</ul>-->
-            <!--<div class="tech">[Scala, Play, MongoDB, Amazon Web Services]</div>-->
-          <!--</div>-->
-          <!--<h6><a target="_blank" href="http://mediac.co">Mediac</a> - Dynamic Content Platform</h6>-->
-          <!--<div class="grid_4 alpha">-->
-            <!--<ul>-->
-              <!--<li>Keep track of dynamic content like webcomics/videos/blogs</li>-->
-            <!--</ul>-->
-            <!--<div class="tech">[Rails, Bootstrap, CoffeeScript, Heroku, PostgreSQL]</div>-->
-          <!--</div>-->
-          <!--<h6><a target="_blank" href="http://jeff-kao.com/projects/2011/10/08/photograff.html">Photograff</a> - Facebook Canvas App</h6>-->
-          <!--<div class="grid_4 alpha">-->
-            <!--<ul>-->
-              <!--<li>Graffiti on Facebook Photos</li>-->
-            <!--</ul>-->
-            <!--<div class="tech">[HTML5 Canvas, jQuery, PHP, Facebook API]</div>-->
-          <!--</div>-->
-          <!--<h6>More on GitHub: <a target="_blank" href="http://github.com/jkao">http://github.com/jkao</a></h6>-->
-        <!--</div>-->
-        <!--<div class="clear"></div>-->
+        <div class="projects">
+          <h3>Projects</h3>
+          <h6>OMGiWant - Gift Recommendation</h6>
+          <div class="grid_4 alpha">
+            <ul>
+              <li>In the works.</li>
+            </ul>
+            <div class="tech">[Scala, Play, MongoDB, Amazon Web Services]</div>
+          </div>
+          <h6><a target="_blank" href="http://mediac.co">Mediac</a> - Dynamic Content Platform</h6>
+          <div class="grid_4 alpha">
+            <ul>
+              <li>Keep track of dynamic content like webcomics/videos/blogs</li>
+            </ul>
+            <div class="tech">[Rails, Bootstrap, CoffeeScript, Heroku, PostgreSQL]</div>
+          </div>
+          <h6><a target="_blank" href="http://jeff-kao.com/projects/2011/10/08/photograff.html">Photograff</a> - Facebook Canvas App</h6>
+          <div class="grid_4 alpha">
+            <ul>
+              <li>Graffiti on Facebook Photos</li>
+            </ul>
+            <div class="tech">[HTML5 Canvas, jQuery, PHP, Facebook API]</div>
+          </div>
+          <h6>More on GitHub: <a target="_blank" href="http://github.com/jkao">http://github.com/jkao</a></h6>
+        </div>
+        <div class="clear"></div>
         <div class="notable-info">
           <h3>Notable Info</h3>
           <ul>
@@ -454,9 +415,10 @@
         <div class="grid_4 alpha" id="education">
           <h3>Education</h3>
           <h4>University of Waterloo</h4>
-          <h6>BASc. Computer Engineering 2014</h6>
+          <h6>Computer Engineering</h6>
           <ul>
-            <li>Member of clubs including: Muay Thai, Judo, Music, Poker</li>
+            <li>Expected graduation in 2014</li>
+            <li>Member of Muay Thai Club, Music Club, Poker Club</li>
           </ul>
         </div>
       </div>
