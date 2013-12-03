@@ -13,7 +13,7 @@
       /* Resume styling, same file due to school system reqs */
       html {
         font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, 'Lucida Grande', sans-serif;
-        color: #555;
+        color: #575757;
       }
       a {
         text-decoration: none;
@@ -49,7 +49,7 @@
         background-color: #FFF;
         margin-top: 15px;
         margin-bottom: 15px;
-        padding-bottom: 25px;
+        padding-bottom: 45px;
       }
       #resume-body a {
         color: #2A85E8;
@@ -60,282 +60,145 @@
       #resume-body h3 {
         margin: 10px 0 5px;
       }
-      #resume-header {
-        background-color: #2A85E8;
-        color: #FFF;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        margin-bottom: 15px;
-      }
-      #resume-header h1 {
+      #resume-body .padded {
         padding-left: 15px;
       }
+      #resume-header {
+        padding-top: 15px;
+        padding-bottom: 5px;
+      }
       #resume-header h1 {
-        color: #FFF;
         font-size: 64px;
       }
       #resume-header .meta {
-        font-size: 18px;
+        font-size: 16px;
         margin: 5px 0;
       }
-      #resume-header a {
-        color: #FFF;
+      #resume-header .meta-break {
+        margin-left: 10px;
+        margin-right: 10px;
       }
       #resume-header a:hover {
         text-decoration: underline;
       }
-      #work-col {
-        border-right: solid 1px;
+      hr.top-bar {
+        height: 20px;
+        background-color: #2A85E8;
       }
-      #skills-col {
-        width: 298px;
-      }
-      .skills ul {
-        font-size: 14px;
+      .resume-section {
+        margin-top: 20px;
         padding: 5px 0;
+        font-size: 14px;
+      }
+      p.summary {
+        word-spacing: 4px;
+      }
+
+      .skills ul {
+        padding: 5px 0 0;
       }
       .skills li {
-        padding: 1px 0;
+        padding: 2px 0;
       }
-      .job-title {
-        color: #000;
-        font-size: 19px;
-        font-weight: bold;
+      .skills .grid_1 {
+        width: 95px;
       }
-      .job-header {
-        color: #000;
-        //font-weight: bold;
-        font-size: 17px;
-      }
-      .job-entry {
-        margin: 12px 0 55px;
-      }
-      .job-date {
-        font-size: 14px;
+
+      .work-block {
+        margin-bottom: 15px;
       }
       .job-meta {
         font-size: 12px;
+        margin: 3px 0 4px;
       }
-      .job-location {
-        font-style: italic;
-      }
-      .job-site {
-        padding-left: 15px;
-      }
-      .job-site a {
-        color: #2A85E8;
-      }
-      .job-site a:hover {
-        text-decoration: underline;
+      .job-meta .link {
+        margin-left: 15px;
       }
       .job-desc {
-        margin-top: 5px;
+        font-size: 14px;
       }
       .job-desc ul {
-        margin-top: 5px;
-        font-size: 14px;
-        margin-left: 20px;
-        list-style: disc;
+        list-style-type: disc;
+        padding-left: 15px;
       }
-      .job-desc ul ul {
-        margin: 0;
-        margin-left: 20px;
-        list-style: circle;
+      .job-desc li {
+        margin: 3px 0;
       }
       .job-skills {
-        margin-top: 5px;
+        margin-top: 2px;
         font-size: 13px;
       }
-      .projects {
-        font-size: 14px;
-        margin: 20px 0;
+
+      ul.projects {
+        list-style-type: disc;
       }
-      .projects ul {
-        list-style: disc;
-        margin: 5px 0 5px 15px;
+      ul.projects li {
+        padding-bottom: 3px;
       }
-      .projects .tech {
-        font-size: 13px;
-        margin: 5px 0;
+
+      ul.education {
+        list-style-type: disc;
+        margin: 2px 0;
+        padding-left: 15px;
       }
-      .notable-info  {
-        margin: 20px 0;
-      }
-      .notable-info ul {
-        margin: 5px 0 5px 10px;
-        list-style: circle;
-        font-size: 14px;
-      }
-      #education {
-        font-size: 14px;
-      }
-      #education ul {
-        margin: 5px 0 5px 10px;
-        list-style: circle;
+      .school {
+        margin-bottom: 10px;
       }
     </style>
   </head>
   <body>
     <div class="container_12" id="resume-body">
+
+      <hr class="top-bar" />
+
       <div id="resume-header" class="clearfix">
-        <div class="grid_9">
-          <h1>Jeff Kao</h1>
-        </div>
-        <div class="grid_3">
-          <p class="meta"><a target="_blank" href="http://jeff-kao.com">http://jeff-kao.com</a></p>
-          <p class="meta"><a target="_blank" href="mailto:jeff.kao.000@gmail.com">jeff.kao.000@gmail.com</a></p>
-          <p class="meta">(647) 907-7192</p>
-        </div>
-      </div>
-      <div class="grid_8" id="work-col">
-        <!--<h2>Work Experience</h2>-->
-        <div class="job-entry">
-          <div class="grid_6 alpha job-title">
-            Foursquare - Software Engineer (Intern)
-          </div>
-          <div class="grid_2 omega job-date">Apr. '13 - Aug. '13</div>
-          <div class="clear"></div>
-          <div class="job-meta">
-            <span class="job-location">New York, NY</span>
-            <span class="job-site">(<a target="_blank" href="http://foursquare.com">http://foursquare.com</a>)</span>
-          </div>
-          <div class="clear"></div>
-          <div class="job-desc">
-            <div class="job-header">Worked on launching self-service ads for merchants.</div>
-            <ul>
-              <li>Worked on core ads and payments tech across distributed services.</li>
-              <li>Used <strong>data mining techniques</strong> to build budget and bid recommendations for ad campaigns.</li>
-            </ul>
-          </div>
-          <div class="grid_8 alpha job-skills">[Scala, MongoDB, Hadoop, Finagle, Lift, ZooKeeper, Kestrel, Python]</div>
-        </div>
-        <div class="clear"></div>
-        <div class="job-entry">
-          <div class="grid_6 alpha job-title">
-            Freelance Consultant
-          </div>
-          <div class="grid_2 omega job-date">Ongoing</div>
-          <div class="clear"></div>
-          <div class="job-desc">
-            <div class="job-header">Solving client problems with software solutions and business strategy.</div>
-            <ul>
-              <li>Strategized and built cloud device software prototype for an <a href="http://westonexpressions.com" target="_blank">advertising startup</a> leading to the securing of a large seed round.</li>
-              <li>Built an internal job board for a non-profit organization.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="clear"></div>
-        <div class="job-entry">
-          <div class="grid_6 alpha job-title">
-            Inkling - Platform Engineer (Intern)
-          </div>
-          <div class="grid_2 omega job-date">Aug. '12 - Dec '12</div>
-          <div class="clear"></div>
-          <div class="job-meta">
-            <span class="job-location">San Francisco, CA</span>
-            <span class="job-site">(<a target="_blank" href="http://inkling.com">http://inkling.com</a>)</span>
-          </div>
-          <div class="clear"></div>
-          <div class="job-desc">
-            <div class="job-header">Worked on scaling out Inkling's digital publishing platform.</div>
-            <ul>
-              <li>Worked on software bottlenecks on backend-services for <strong>performance improvements of over a magnitude</strong></li>
-              <li>Re-built project management tool from ground-up to <strong>support 10x scale</strong> via large-scale code refactoring, caching, messaging and sharding schemes</li>
-            </ul>
-          </div>
-          <div class="grid_8 alpha job-skills">[Python, Tornado, Ruby, Rails, Redmine, Redis, Memcached, RabbitMQ, PostgreSQL]</div>
-        </div>
-        <div class="clear"></div>
-        <div class="job-entry">
-          <div class="grid_6 alpha job-title">
-            PagerDuty - Software Engineer (Intern)
-          </div>
-          <div class="grid_2 omega job-date">Jan. '12 - Apr. '12</div>
-          <div class="clear"></div>
-          <div class="job-meta">
-            <span class="job-location">San Francisco, CA</span>
-            <span class="job-site">(<a target="_blank" href="http://pagerduty.com">http://pagerduty.com</a>)</span>
-          </div>
-          <div class="clear"></div>
-          <div class="job-desc">
-            <div class="job-header">Shipped code for IT on-call alerting platform at Y-Combinator startup.</div>
-            <ul>
-              <li>Re-built payment services to <strong>avoid expensive PCI-Compliance</strong> requirements</li>
-              <li><strong>Automated time-consuming administrative tasks</strong></li>
-              <li>Took on large refactoring tasks to <strong>increase maintainability and testability</strong></li>
-              <li><strong>Won Hackday Award</strong> for developing <strong>internationalization support</strong> capabilities</li>
-            </ul>
-          </div>
-          <div class="grid_8 alpha job-skills">[Ruby, Rails, CoffeeScript, jQuery, Backbone.js, HAML, SASS, MySQL]</div>
-        </div>
-        <div class="clear"></div>
-        <div class="job-entry">
-          <div class="grid_6 alpha job-title">
-            Infusion - Software Consultant (Intern)
-          </div>
-          <div class="grid_2 omega job-date">May. '11 - Sept. '11</div>
-          <div class="clear"></div>
-          <div class="job-meta">
-            <span class="job-location">New York, NY</span>
-            <span class="job-site">(<a target="_blank" href="http://infusion.com">http://infusion.com</a>)</span>
-          </div>
-          <div class="clear"></div>
-          <div class="job-desc">
-            <div class="job-header">Worked with clients to deliver high-quality software solutions.</div>
-            <ul>
-              <li>Built a <strong>million-dollar funding platform</strong> for New York Department of Education:
-              <ul>
-                <li>Project received internal award for "<strong>Best Application of the Year</strong>"</li>
-              </ul>
-              <li>Built a Browser Helper Object for AMD for video tools</li>
-            </ul>
-          </div>
-          <div class="grid_8 alpha job-skills">[C#, C++, ASP.NET MVC, JavaScript, jQuery]</div>
-        </div>
-        <div class="clear"></div>
-        <div class="job-entry">
-          <div class="grid_6 alpha job-title">
-            Sybase (SAP) - Software Developer (Intern)
-          </div>
-          <div class="grid_2 omega job-date">Aug. '10 - Dec. '10</div>
-          <div class="clear"></div>
-          <div class="job-meta">
-            <span class="job-location">Waterloo, ON</span>
-            <span class="job-site">(<a target="_blank" href="http://sybase.com">http://sybase.com</a>)</span>
-          </div>
-          <div class="clear"></div>
-          <div class="job-desc">
-            <div class="job-header">Built infrastructure tools for Sybase IQ product and team.</div>
-            <ul>
-              <li>Built an automated installer test framework as a side-project</li>
-            </ul>
-          </div>
-          <div class="grid_8 alpha job-skills">[Java, bash, perl]</div>
-        </div>
-        <div class="job-entry">
-          <div class="grid_6 alpha job-title">
-            Atomic Energy of Canada - Research Student
-          </div>
-          <div class="grid_2 omega job-date">Jun. '07 - Aug. '07</div>
-          <div class="clear"></div>
-          <div class="job-meta">
-            <span class="job-location">Deep River, ON</span>
-            <span class="job-site">(<a target="_blank" href="http://aecl.ca">http://aecl.ca</a>)</span>
-          </div>
-          <div class="clear"></div>
-          <div class="job-desc">
-            <div class="job-header">Performed Research on an Atmospheric Pressure Plasma Jet</div>
-            <ul>
-              <li>Researched various cost-effective methods of decomposing Zirconium compounds to create Zirconium Tert-Butoxide used to coat reactor walls</li>
-              <li>Presented findings to AECL staff at the end of term</li>
-            </ul>
+        <div class="grid_12">
+          <div class="padded">
+            <h1>Jeff Kao</h1>
+            <a target="_blank" href="http://jeff-kao.com" class="meta">http://jeff-kao.com</a>
+            <span class="meta-break">|</span>
+            <a target="_blank" href="mailto:jeff.kao.000@gmail.com" class="meta">jeff.kao.000@gmail.com</a>
           </div>
         </div>
       </div>
-      <div class="grid_4" id="skills-col">
-        <h3>Technical Skills</h3>
-        <div class="grid_4 alpha skills" style="width:95px;">
-          <div class="grid_1 alpha" style="width:35px;">
+
+      <div class="grid_12 resume-section">
+        <div class="grid_2 alpha">
+          <div class="padded">
+            <h4>Profile</h4>
+          </div>
+        </div>
+        <div class="grid_10 omega">
+          <p class="summary">
+            I'm an <strong>entrepreneurial</strong> individual interested in 
+            <strong>internationalization</strong>
+            and
+            <strong>positively changing the way people interact with the world</strong>,
+            using technology.
+            If I'm not programming, you'll find me
+            playing with <strong>new tech and products</strong>,
+            playing <strong>music</strong> with my guitar,
+            doing <strong>martial arts</strong>,
+            learning <strong>foreign languages</strong>,
+            or
+            <strong>travelling</strong>.
+            My technical interests include
+            <strong>natural language processing</strong>
+            and
+            <strong>distributed systems</strong>.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid_12 resume-section">
+        <div class="grid_2 alpha">
+          <div class="padded">
+            <h4>Skills</h4>
+          </div>
+        </div>
+        <div class="grid_10 omega skills">
+
+          <div class="grid_1 alpha">
             <ul>
               <li>Ruby</li>
               <li>Python</li>
@@ -343,112 +206,336 @@
               <li>Java</li>
             </ul>
           </div>
-          <div class="grid_1 omega" style="width:35px;">
+
+          <div class="grid_1">
             <ul>
               <li>C#</li>
-              <li>C</li>
+              <li>Scheme</li>
+            </ul>
+            <ul>
               <li>SQL</li>
             </ul>
           </div>
-          <div class="clear"></div>
-          <ul>
-            <li>Ruby on Rails</li>
-            <li>Play</li>
-            <li>Finagle</li>
-            <li>Tornado</li>
-            <li>ASP.NET MVC</li>
-          </ul>
-          <ul>
-            <!--<li>iOS/RubyMotion</li>-->
-          </ul>
+
+          <div class="grid_1">
+            <ul>
+              <li>Ruby on Rails</li>
+              <li>Play</li>
+              <li>Finagle</li>
+              <li>Tornado</li>
+            </ul>
+          </div>
+
+          <div class="grid_1">
+            <ul>
+              <li>JavaScript</li>
+              <li>CoffeeScript</li>
+            </ul>
+            <ul>
+              <li>jQuery</li>
+              <li>Backbone.js</li>
+            </ul>
+          </div>
+
+          <div class="grid_1">
+            <ul>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+            </ul>
+            <ul>
+              <li>redis</li>
+              <li>memcached</li>
+            </ul>
+          </div>
+
+          <div class="grid_1">
+            <ul>
+              <li>RabbitMQ</li>
+              <li>Kestrel</li>
+            </ul>
+            <ul>
+              <li>Hadoop</li>
+            </ul>
+            <ul>
+              <li>ZooKeeper</li>
+            </ul>
+          </div>
         </div>
-        <div class="grid_1 skills" style="width:75px;">
-          <ul>
-            <li>jQuery</li>
-            <li>Backbone.js</li>
-          </ul>
-          <ul>
-            <li>JavaScript</li>
-            <li>CoffeeScript</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-          </ul>
-          <ul>
-            <li>git, hg, svn</li>
-            <li>bash, zsh</li>
-            <li>vim</li>
-          </ul>
+
+      </div>
+
+      <div class="grid_12 resume-section">
+        <div class="grid_2 alpha">
+          <div class="padded">
+            <h4>Work</h4>
+          </div>
         </div>
-        <div class="grid_1 omega skills">
-          <ul>
-            <li>PostgreSQL</li>
-            <li>MySQL</li>
-            <li>MongoDB</li>
-            <li>Cassandra</li>
-          </ul>
-          <ul>
-            <li>memcached</li>
-            <li>redis</li>
-          </ul>
-          <ul>
-            <li>RabbitMQ</li>
-            <li>Kestrel</li>
-          </ul>
-          <ul>
-            <li>Heroku</li>
-            <li>Amazon AWS</li>
-          </ul>
-        </div>
-        <div class="clear"></div>
-        <!--<div class="projects">-->
-          <!--<h3>Projects</h3>-->
-          <!--<h6>OMGiWant - Gift Recommendation</h6>-->
-          <!--<div class="grid_4 alpha">-->
-            <!--<ul>-->
-              <!--<li>In the works.</li>-->
-            <!--</ul>-->
-            <!--<div class="tech">[Scala, Play, MongoDB, Amazon Web Services]</div>-->
-          <!--</div>-->
-          <!--<h6><a target="_blank" href="http://mediac.co">Mediac</a> - Dynamic Content Platform</h6>-->
-          <!--<div class="grid_4 alpha">-->
-            <!--<ul>-->
-              <!--<li>Keep track of dynamic content like webcomics/videos/blogs</li>-->
-            <!--</ul>-->
-            <!--<div class="tech">[Rails, Bootstrap, CoffeeScript, Heroku, PostgreSQL]</div>-->
-          <!--</div>-->
-          <!--<h6><a target="_blank" href="http://jeff-kao.com/projects/2011/10/08/photograff.html">Photograff</a> - Facebook Canvas App</h6>-->
-          <!--<div class="grid_4 alpha">-->
-            <!--<ul>-->
-              <!--<li>Graffiti on Facebook Photos</li>-->
-            <!--</ul>-->
-            <!--<div class="tech">[HTML5 Canvas, jQuery, PHP, Facebook API]</div>-->
-          <!--</div>-->
-          <!--<h6>More on GitHub: <a target="_blank" href="http://github.com/jkao">http://github.com/jkao</a></h6>-->
-        <!--</div>-->
-      <!--<div class="clear"></div>-->
-        <div class="notable-info">
-          <h3>Notable Info</h3>
-          <ul>
-            <li>Aspiring <strong>entrepreneur</strong>, with interests in <strong>internationalization</strong></li>
-            <li>Technical interests in <strong>natural language processing</strong> and <strong>distributed systems</strong></li>
-            <li>Able to communicate in <strong>Cantonese</strong>, <strong>Mandarin</strong>, <strong>Japanese</strong></li>
-          </ul>
-        </div>
-        <div class="clear"></div>
-        <div class="grid_4 alpha" id="education">
-          <h3>Education</h3>
-          <h4>University of Waterloo</h4>
-          <h6>BASc. Computer Engineering 2014</h6>
-          <ul>
-            <li>Member of Muay Thai, Judo, Music, Poker Club</li>
-          </ul>
-          <h4>Nanyang Tech University</h4>
-          <h6>Computer Engineering (Exchange) 2013</h6>
-          <ul>
-            <li>Member of Muay Thai and Judo Club</li>
-          </ul>
+        <div class="grid_10 omega">
+
+          <div class="grid_10 alpha work-block">
+            <div class="grid_5 alpha">
+              <h5>Foursquare</h5>
+
+              <div class="grid_5 alpha">
+                <strong>Server Engineer Intern</strong>
+              </div>
+
+              <div class="grid_5 alpha job-meta">
+                <span class="location-date"><em>New York, NY - 2013</em></span>
+                <span class="link">(<a href="http://foursquare.com" target="_blank">http://foursquare.com</a>)</span>
+              </div>
+
+              <div class="grid_5 alpha job-desc">
+                <ul>
+                  <li>Worked on launching
+                    <a href="http://blog.foursquare.com/2013/10/14/big-news-today-were-opening-up-foursquare-ads-to-all-small-businesses-around-the-world/" target="_blank">
+                      self-service ads for merchants
+                    </a>
+                  </li>
+                  <li>Core ads and payments tech across distributed services</li>
+                  <li>Used <strong>data mining</strong> techniques to build budget and bid recommendations</li>
+                </ul>
+              </div>
+
+              <div class="grid_5 alpha job-skills">
+                [Scala, MongoDB, Hadoop, Finagle, ZooKeeper, Kestrel, Python]
+              </div>
+            </div>
+
+            <div class="grid_5 omega">
+              <h5>Freelance</h5>
+
+              <div class="grid_5 alpha">
+                <strong>Technology Consultant</strong>
+              </div>
+
+              <div class="grid_5 alpha job-meta">
+                <span class="location-date"><em>Ongoing</em></span>
+                <span class="link">(<a href="http://jeff-kao.com" target="_blank">http://jeff-kao.com</a>)</span>
+              </div>
+
+              <div class="grid_5 alpha job-desc">
+                <ul>
+                  <li>
+                    Built cloud device software prototype for an
+                    <a href="http://linkett.com" target="_blank">advertising startup</a>
+                    leading to the <strong>securing of a large seed round</strong>.
+                  </li>
+                  <li>Built an internal job board for a non-profit organization</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid_10 alpha work-block">
+            <div class="grid_5 alpha">
+              <h5>Inkling</h5>
+
+              <div class="grid_5 alpha">
+                <strong>Platform Engineer Intern</strong>
+              </div>
+
+              <div class="grid_5 alpha job-meta">
+                <span class="location-date"><em>San Francisco, CA - 2012</em></span>
+                <span class="link">(<a href="http://inkling.com" target="_blank">http://inkling.com</a>)</span>
+              </div>
+
+              <div class="grid_5 alpha job-desc">
+                <ul>
+                  <li>
+                    Worked on scaling out Inkling's
+                    <a href="https://inkling.com/habitat" target="_blank">digital publishing platform</a>
+                  </li>
+                  <li>Improved caching algorithm performance by <strong>a magnitude</strong></li>
+                  <li>Re-built project management tool from ground-up to support a <strong>magnitude more scale</strong></li>
+                </ul>
+              </div>
+
+              <div class="grid_5 alpha job-skills">
+                [Python, Tornado, redis, Rails, PostgreSQL]
+              </div>
+            </div>
+
+            <div class="grid_5 omega">
+              <h5>PagerDuty</h5>
+
+              <div class="grid_5 alpha">
+                <strong>Software Engineer Intern</strong>
+              </div>
+
+              <div class="grid_5 alpha job-meta">
+                <span class="location-date"><em>San Francisco, CA - 2012</em></span>
+                <span class="link">(<a href="http://pagerduty.com" target="_blank">http://pagerduty.com</a>)</span>
+              </div>
+
+              <div class="grid_5 alpha job-desc">
+                <ul>
+                  <li>Re-built payment services to <strong>avoid expensive PCI-Compliance requirements</strong></li>
+                  <li>Took on large refactoring tasks to increase maintainability and testability</li>
+                  <li><strong>Won Hackday Award</strong> for developing internationalization support capabilities</li>
+                </ul>
+              </div>
+
+              <div class="grid_5 alpha job-skills">
+                [Rails, CoffeeScript, jQuery, Backbone.js, HAML, SASS, MySQL]
+              </div>
+            </div>
+          </div>
+
+          <div class="grid_10 alpha work-block">
+            <div class="grid_5 alpha">
+              <h5>Infusion</h5>
+
+              <div class="grid_5 alpha">
+                <strong>Software Consultant Intern</strong>
+              </div>
+
+              <div class="grid_5 alpha job-meta">
+                <span class="location-date"><em>New York, NY - 2011</em></span>
+                <span class="link">(<a href="http://infusion.com" target="_blank">http://infusion.com</a>)</span>
+              </div>
+
+              <div class="grid_5 alpha job-desc">
+                <ul>
+                  <li>
+                    Built a <strong>million-dollar</strong> funding platform for New York Department of Education:
+                    <ul>
+                      <li>Project received internal award for <strong>"Best Application of the Year"</strong></li>
+                    </ul>
+                  </li>
+                  <li>Built a Browser Helper Object for AMD for video tools</li>
+                </ul>
+              </div>
+
+              <div class="grid_5 alpha job-skills">
+                [C#, C++, ASP.NET MVC, JavaScript, jQuery]
+              </div>
+            </div>
+
+            <div class="grid_5 omega">
+              <h5>Sybase</h5>
+
+              <div class="grid_5 alpha">
+                <strong>Software Developer Intern</strong>
+              </div>
+
+              <div class="grid_5 alpha job-meta">
+                <span class="location-date"><em>Waterloo, ON - 2010</em></span>
+                <span class="link">(<a href="http://sybase.com" target="_blank">http://sybase.com</a>)</span>
+              </div>
+
+              <div class="grid_5 alpha job-desc">
+                <ul>
+                  <li>Built infrastructure tools for Sybase IQ product and team.</li>
+                  <li>Built an automated installer test framework as a side-project</li>
+                </ul>
+              </div>
+
+              <div class="grid_5 alpha job-skills">
+                [Java, bash, perl]
+              </div>
+            </div>
+          </div>
+
+          <div class="grid_10 alpha work-block">
+            <div class="grid_5 alpha">
+              <h5>RamSoft</h5>
+
+              <div class="grid_5 alpha">
+                <strong>QA Tech</strong>
+              </div>
+
+              <div class="grid_5 alpha job-meta">
+                <span class="location-date"><em>Toronto, ON - 2009</em></span>
+                <span class="link">(<a href="http://ramsoft.com" target="_blank">http://ramsoft.com</a>)</span>
+              </div>
+
+              <div class="grid_5 alpha job-desc">
+                <ul>
+                  <li>Tested medical imaging software.</li>
+                </ul>
+              </div>
+
+              <div class="grid_5 alpha job-skills">
+                [SQL, batch]
+              </div>
+            </div>
+
+            <div class="grid_5 omega">
+              <h5>Atomic Energy of Canada</h5>
+
+              <div class="grid_5 alpha">
+                <strong>Software Developer Intern</strong>
+              </div>
+
+              <div class="grid_5 alpha job-meta">
+                <span class="location-date"><em>Deep River, ON - 2007</em></span>
+                <span class="link">(<a href="http://aecl.ca" target="_blank">http://aecl.ca</a>)</span>
+              </div>
+
+              <div class="grid_5 alpha job-desc">
+                <ul>
+                  <li>Researched various cost-effective methods of decomposing Zirconium Tert-Butoxide using an <strong>Atmospheric Pressure Plasma Jet</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+
+      <div class="grid_12 resume-section">
+
+        <div class="grid_6 omega">
+          <div class="grid_2 alpha">
+            <div class="padded">
+              <h4>Education</h4>
+            </div>
+          </div>
+
+          <div class="grid_4 omega">
+            <div class="grid_4 alpha school">
+              <h5>University of Waterloo</h5>
+              <strong>BASc. Computer Engineering (2014)</strong>
+              <ul class="education">
+                <li>Member of Muay Thai and Music Club</li>
+                <li>Resident at Velocity Startup Incubator</li>
+              </ul>
+            </div>
+
+            <div class="grid_4 alpha school">
+              <h5>Nanyang Technology University</h5>
+              <strong>Computer Engineering Exchange (2013)</strong>
+              <ul class="education">
+                <li>Member of Muay Thai and Judo Club</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid_6 alpha">
+          <div class="grid_2 alpha">
+            <div class="padded">
+              <h4>Projects</h4>
+            </div>
+          </div>
+
+          <div class="grid_4 omega">
+            <ul class="projects">
+              <li><strong>Real-World Analytics</strong> Device using <strong>Machine Vision</strong> (4th Year Design Project)</li>
+              <li><strong>Complaint Extraction</strong> from Android Play Store</li>
+              <li>Social Bookmarking site for Dynamic Content</li>
+              <li><strong>HTML5</strong> Facebook Graffiti App</li>
+              <li>Other Projects and Code can be found on
+                <a target="_blank" href="http://github.com/jkao">GitHub</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+
     </div>
   </body>
 </html>
