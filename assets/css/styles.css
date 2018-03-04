@@ -36,8 +36,9 @@ body{margin:10px}h1{font-size:138.5%}h2{font-size:123.1%}h3{font-size:108%}h1,h2
 }
 
 #about p {
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
   font-size: 19px;
+  font-weight: 300;
   margin: 25px 0 10px;
   word-spacing: 3px;
 }
@@ -49,8 +50,9 @@ body{margin:10px}h1{font-size:138.5%}h2{font-size:123.1%}h3{font-size:108%}h1,h2
 }
 
 #about ul {
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
   font-size: 19px;
+  font-weight: 300;
   list-style-type: none;
   margin: 0;
   padding: 0 0 0 15px;
