@@ -57,3 +57,7 @@ body {
 #external-pdf {
   color: #121212;
 }
+
+#pdf {
+  cursor: pointer;
+}

@@ -62,6 +62,9 @@ const loadPrev = function() {
 const next = document.getElementById("next-page");
 next.onclick = function () { loadNext(); };
 
+const canvas = document.getElementById("pdf");
+pdf.onclick = function () { loadNext(); };
+
 const prev = document.getElementById("prev-page");
 prev.onclick = function (ev) { loadNext(); };
 
