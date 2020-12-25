@@ -25,17 +25,17 @@ body {
 }
 
 #content h1 {
-  font-size: 2.4rem;
+  font-size: 4vw;
 }
 
 #content #life-dates {
-  font-size: 1.6rem;
+  font-size: 2vw;
   font-weight: normal;
 }
 
 #meta-controls {
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 2.4vw;
   text-align: right;
 }
 
@@ -47,7 +47,7 @@ body {
 
 #page-controls {
   margin: 1.2rem 0;
-  font-size: 2.4rem;
+  font-size: 2.4vw;
 }
 
 #page-controls i {
@@ -65,5 +65,5 @@ body {
 }
 
 #footer {
-  font-size: 1.2rem;
+  font-size: 2vw;
 }
