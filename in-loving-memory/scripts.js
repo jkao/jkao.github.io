@@ -66,7 +66,7 @@ const canvas = document.getElementById("pdf");
 pdf.onclick = function () { loadNext(); };
 
 const prev = document.getElementById("prev-page");
-prev.onclick = function (ev) { loadNext(); };
+prev.onclick = function (ev) { loadPrev(); };
 
 document.onkeydown = function(e) {
   console.log("hello", {e});
