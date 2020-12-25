@@ -124,10 +124,16 @@ const muteButton = document.getElementById("mute");
 const song1 = new Howl({
   src: ["song1.mp3"],
   preload: true,
+  onend: function() {
+    playSong(2);
+  },
 });
 const song2 = new Howl({
   src: ["song2.mp3"],
-  preload: true
+  preload: true,
+  onend: function() {
+    playSong(2);
+  },
 });
 
 const toggleVolume = () => {
@@ -157,14 +163,6 @@ const playSong = (songNumber) => {
     song2.seek(4);
     song2.play();
   }
-};
-
-song1.onended = function() {
-  playSong(2);
-};
-
-song2.onended = function() {
-  playSong(1);
 };
 
 playSong(getRandomSongNumber());
