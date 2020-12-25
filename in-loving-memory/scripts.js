@@ -78,6 +78,30 @@ document.onkeydown = function(e) {
   }
 };
 
+// autoplay
+let AUTOPLAY = true;
+setInterval(() => {
+  if (AUTOPLAY) {
+    loadNext();
+  }
+}, 7500);
+
+const autoplayButton = document.getElementById("autoplay");
+const setAutoplay = (autoplay) => {
+  AUTOPLAY = autoplay;
+  if (AUTOPLAY) {
+    autoplayButton.classList.remove("fa-play");
+    autoplayButton.classList.add("fa-pause");
+  } else {
+    autoplayButton.classList.remove("fa-pause");
+    autoplayButton.classList.add("fa-play");
+  }
+};
+
+autoplayButton.onclick = function() {
+  setAutoplay(!AUTOPLAY);
+};
+
 // music
 const getRandomSongNumber = () => {
   return Math.floor(Math.random() * Math.floor(2)) + 1;
