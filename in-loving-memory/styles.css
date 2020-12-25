@@ -24,11 +24,12 @@ body {
 }
 
 #content h1 {
-  font-size: 3.2rem;
+  font-size: 2.4rem;
 }
 
-#content h2 {
-  font-size: 2.4rem;
+#content #life-dates {
+  font-size: 1.6rem;
+  font-weight: normal;
 }
 
 #meta-controls {
@@ -60,4 +61,8 @@ body {
 
 #pdf {
   cursor: pointer;
+}
+
+#footer {
+  font-size: 1.2rem;
 }
