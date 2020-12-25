@@ -80,10 +80,11 @@ prev.onclick = function () {
 document.onkeydown = function(e) {
   const LEFT = 37;
   const RIGHT = 39;
-  setAutoplay(false);
   if (String(e.keyCode) === String(LEFT)) {
+    setAutoplay(false);
     loadPrev();
   } else if (String(e.keyCode) === String(RIGHT)) {
+    setAutoplay(false);
     loadNext();
   }
 };
@@ -117,33 +118,23 @@ const getRandomSongNumber = () => {
   return Math.floor(Math.random() * Math.floor(2)) + 1;
 };
 
-let MUTED = true;
+let MUTED = false;
 const muteButton = document.getElementById("mute");
 
-const song1 = new Audio("song1.mp3");
-const song2 = new Audio("song2.mp3");
-
-let SONG1_LOADED = false;
-song1.oncanplay = () => {
-  if (!SONG1_LOADED) {
-    song1.currentTime = 7;
-  }
-  SONG1_LOADED = true;
-};
-
-let SONG2_LOADED = false;
-song2.oncanplay = () => {
-  if (!SONG2_LOADED) {
-    song2.currentTime = 4;
-  }
-  SONG2_LOADED = true;
-};
+const song1 = new Howl({
+  src: ["song1.mp3"],
+  preload: true,
+});
+const song2 = new Howl({
+  src: ["song2.mp3"],
+  preload: true
+});
 
 const toggleVolume = () => {
   MUTED = !MUTED;
 
-  song1.muted = MUTED;
-  song2.muted = MUTED;
+  song1.mute(MUTED);
+  song2.mute(MUTED);
 
   if (MUTED) {
     muteButton.classList.remove("fa-volume-up");
@@ -151,10 +142,6 @@ const toggleVolume = () => {
   } else {
     muteButton.classList.remove("fa-volume-mute");
     muteButton.classList.add("fa-volume-up");
-
-    if (song1.paused && song2.paused) {
-      playSong(getRandomSongNumber());
-    }
   }
 };
 
@@ -164,10 +151,10 @@ muteButton.onclick = function() {
 
 const playSong = (songNumber) => {
   if (songNumber === 1) {
-    song1.currentTime = 7;
+    song1.seek(7);
     song1.play();
   } else {
-    song2.currentTime = 4;
+    song2.seek(4);
     song2.play();
   }
 };
@@ -179,3 +166,5 @@ song1.onended = function() {
 song2.onended = function() {
   playSong(1);
 };
+
+playSong(getRandomSongNumber());
