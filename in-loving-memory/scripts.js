@@ -108,7 +108,6 @@ const getRandomSongNumber = () => {
 };
 
 let MUTED = false;
-let FIRST_INTERACTION = false;
 const muteButton = document.getElementById("mute");
 
 const song1 = new Audio("song1.mp3");
@@ -129,20 +128,11 @@ const toggleVolume = () => {
   }
 };
 
-// mute to respect autoplay policy
-toggleVolume();
-
 muteButton.onclick = function() {
-  if (!FIRST_INTERACTION) {
-    FIRST_INTERACTION = true;
-    playSong(getRandomSongNumber());
-  }
-
   toggleVolume();
 };
 
 const playSong = (songNumber) => {
-  if (!FIRST_INTERACTION) { return; }
   if (songNumber === 1) {
     song1.currentTime = 7;
     song1.play();
