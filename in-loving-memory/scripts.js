@@ -16,7 +16,7 @@ const loadPage = (pageNumber) => {
 
   LOADING = true;
   PDF.getPage(pageNumber).then(function(page) {
-    const scale = 1;
+    const scale = 1.5;
     const viewport = page.getViewport({scale: scale});
 
     const canvas = document.getElementById("pdf");
