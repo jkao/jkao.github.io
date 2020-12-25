@@ -60,17 +60,27 @@ const loadPrev = function() {
 };
 
 const next = document.getElementById("next-page");
-next.onclick = function () { loadNext(); };
+next.onclick = function () {
+  setAutoplay(false);
+  loadNext();
+};
 
 const canvas = document.getElementById("pdf");
-pdf.onclick = function () { loadNext(); };
+pdf.onclick = function () {
+  setAutoplay(false);
+  loadNext();
+};
 
 const prev = document.getElementById("prev-page");
-prev.onclick = function () { loadPrev(); };
+prev.onclick = function () {
+  setAutoplay(false);
+  loadPrev();
+};
 
 document.onkeydown = function(e) {
   const LEFT = 37;
   const RIGHT = 39;
+  setAutoplay(false);
   if (String(e.keyCode) === String(LEFT)) {
     loadPrev();
   } else if (String(e.keyCode) === String(RIGHT)) {
@@ -116,7 +126,6 @@ const song2 = new Audio("song2.mp3");
 let SONG1_LOADED = false;
 song1.oncanplay = () => {
   if (!SONG1_LOADED) {
-    console.log("OK1");
     song1.currentTime = 7;
   }
   SONG1_LOADED = true;
@@ -125,7 +134,6 @@ song1.oncanplay = () => {
 let SONG2_LOADED = false;
 song2.oncanplay = () => {
   if (!SONG2_LOADED) {
-    console.log("OK2");
     song2.currentTime = 4;
   }
   SONG2_LOADED = true;
