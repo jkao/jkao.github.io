@@ -107,11 +107,29 @@ const getRandomSongNumber = () => {
   return Math.floor(Math.random() * Math.floor(2)) + 1;
 };
 
-let MUTED = false;
+let MUTED = true;
 const muteButton = document.getElementById("mute");
 
 const song1 = new Audio("song1.mp3");
 const song2 = new Audio("song2.mp3");
+
+let SONG1_LOADED = false;
+song1.oncanplay = () => {
+  if (!SONG1_LOADED) {
+    console.log("OK1");
+    song1.currentTime = 7;
+  }
+  SONG1_LOADED = true;
+};
+
+let SONG2_LOADED = false;
+song2.oncanplay = () => {
+  if (!SONG2_LOADED) {
+    console.log("OK2");
+    song2.currentTime = 4;
+  }
+  SONG2_LOADED = true;
+};
 
 const toggleVolume = () => {
   MUTED = !MUTED;
@@ -125,6 +143,10 @@ const toggleVolume = () => {
   } else {
     muteButton.classList.remove("fa-volume-mute");
     muteButton.classList.add("fa-volume-up");
+
+    if (song1.paused && song2.paused) {
+      playSong(getRandomSongNumber());
+    }
   }
 };
 
