@@ -69,7 +69,6 @@ const prev = document.getElementById("prev-page");
 prev.onclick = function () { loadPrev(); };
 
 document.onkeydown = function(e) {
-  console.log("hello", {e});
   const LEFT = 37;
   const RIGHT = 39;
   if (String(e.keyCode) === String(LEFT)) {
