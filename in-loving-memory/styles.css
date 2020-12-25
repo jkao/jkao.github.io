@@ -2,12 +2,13 @@ html {
   height: 100%;
   width: 100%;
   background-color: #f5f5f5;
+  font-family: 'Playfair Display', serif;
 }
 
 body {
   height: 100%;
   width: 100%;
-  color: #121212;
+  color: #242424;
 }
 
 #main {

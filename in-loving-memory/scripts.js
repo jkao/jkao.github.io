@@ -95,7 +95,7 @@ setInterval(() => {
   if (AUTOPLAY) {
     loadNext();
   }
-}, 7500);
+}, 10000);
 
 const autoplayButton = document.getElementById("autoplay");
 const setAutoplay = (autoplay) => {
@@ -115,7 +115,7 @@ autoplayButton.onclick = function() {
 
 // music
 const getRandomSongNumber = () => {
-  return Math.floor(Math.random() * Math.floor(2)) + 1;
+  return Math.floor(Math.random() * Math.floor(3)) + 1;
 };
 
 let MUTED = false;
@@ -132,7 +132,14 @@ const song2 = new Howl({
   src: ["song2.mp3"],
   preload: true,
   onend: function() {
-    playSong(2);
+    playSong(3);
+  },
+});
+const song3 = new Howl({
+  src: ["song3.mp3"],
+  preload: true,
+  onend: function() {
+    playSong(1);
   },
 });
 
@@ -141,6 +148,7 @@ const toggleVolume = () => {
 
   song1.mute(MUTED);
   song2.mute(MUTED);
+  song3.mute(MUTED);
 
   if (MUTED) {
     muteButton.classList.remove("fa-volume-up");
@@ -159,9 +167,12 @@ const playSong = (songNumber) => {
   if (songNumber === 1) {
     song1.seek(7);
     song1.play();
-  } else {
+  } else if (songNumber === 2) {
     song2.seek(4);
     song2.play();
+  } else {
+    song3.seek(4);
+    song3.play();
   }
 };
 
