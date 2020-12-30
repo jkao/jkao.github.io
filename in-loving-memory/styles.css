@@ -48,12 +48,25 @@ body {
 #page-controls {
   margin: 1.2rem 0;
   font-size: 2.4vw;
+  display: flex;
+  justify-content: space-between
 }
 
 #page-controls i {
   cursor: pointer;
   padding: 1rem;
   margin: 0 0.5rem;
+}
+
+#autoplay-text {
+  font-size: 2vw;
+}
+
+i#autoplay {
+  font-size: 2.5vw;
+  padding: 0;
+  margin: 0 0.5rem;
+  vertical-align: middle;
 }
 
 #external-pdf {
@@ -66,4 +79,19 @@ body {
 
 #footer {
   font-size: 2vw;
+}
+
+#links {
+  padding: 2rem 0;
+}
+
+#links .link-wrapper {
+  padding: 0.5rem 0;
+}
+
+#links a {
+  font-size: 2vw;
+  font-weight: bold;
+  color: #242424;
+  margin: 10rem 0;
 }

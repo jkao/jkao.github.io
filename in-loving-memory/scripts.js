@@ -98,14 +98,17 @@ setInterval(() => {
 }, 10000);
 
 const autoplayButton = document.getElementById("autoplay");
+const autoplayText = document.getElementById("autoplay-text");
 const setAutoplay = (autoplay) => {
   AUTOPLAY = autoplay;
   if (AUTOPLAY) {
-    autoplayButton.classList.remove("fa-play");
-    autoplayButton.classList.add("fa-pause");
+    autoplayText.textContent = "Autoplay on";
+    autoplayButton.classList.remove("fa-toggle-off");
+    autoplayButton.classList.add("fa-toggle-on");
   } else {
-    autoplayButton.classList.remove("fa-pause");
-    autoplayButton.classList.add("fa-play");
+    autoplayText.textContent = "Autoplay off";
+    autoplayButton.classList.remove("fa-toggle-on");
+    autoplayButton.classList.add("fa-toggle-off");
   }
 };
 
@@ -143,8 +146,8 @@ const song3 = new Howl({
   },
 });
 
-const toggleVolume = () => {
-  MUTED = !MUTED;
+const toggleVolume = (override) => {
+  MUTED = override === undefined ? !MUTED : override;
 
   song1.mute(MUTED);
   song2.mute(MUTED);
