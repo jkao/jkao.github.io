@@ -3,3 +3,4 @@ _drafts/
 drafts/
 _import/
 *.DS_Store
+.jekyll-cache
