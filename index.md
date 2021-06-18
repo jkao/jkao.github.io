@@ -5,14 +5,23 @@ title: "Jeff Kao"
 
 # Jeff Kao
 
-I'm a staff engineer at [Radar](https://radar.io/) in Brooklyn.
-I produce music and occasionally DJ.
+<div class="row">
+  <p>I'm a staff engineer at <a href="https://radar.io/" target="_blank">Radar</a> in Brooklyn. I produce music and occasionally DJ.</p>
+  <p>I'm interested in music, languages, travel, and data.</p>
 
-I'm interested in music, languages, travel, and data.
+  <p>
+    Links:
+    <a href="https://www.linkedin.com/in/jeffreykao/" target="_blank">li</a> /
+    <a href="https://twitter.com/j_ckao" target="_blank">tw</a> /
+    <a href="https://www.linkedin.com/in/jeffreykao/" target="_blank">ig</a> /
+    <a href="https://soundcloud.com/j_ckao" target="_blank">sc</a>
+  </p>
+</div>
 
-Links: [li](https://www.linkedin.com/in/jeffreykao/) / [t](https://twitter.com/j_ckao) / [ig](https://instagram.com/j_ckao/) / [sc](https://soundcloud.com/j_ckao)
-
-## Around the internet
-
-- [Open-sourcing our Node.js S2 library](https://archive.is/9S3d0)
-- [How These Software Engineers Make Clean Code a Priority](https://archive.is/9Kzqn)
+<div class="row">
+  <h2 class="small">Around the internet</h2>
+  <ul>
+    <li><a href="https://archive.is/9S3d0" target="_blank">Open-sourcing our Node.js S2 library</a></li>
+    <li><a href="https://archive.is/9Kzqn" target="_blank">How These Software Engineers Make Clean Code a Priority</a></li>
+  </ul>
+</div>

@@ -40,6 +40,9 @@ h1 {
 
 h2 {
   font-size: 1.6rem;
+  &.small {
+    font-size: 1.2rem;
+  }
 }
 
 h3 {
@@ -204,6 +207,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: Helvetica, sans-serif;
+  text-transform: uppercase;
   line-height: $title-line-height;
 }
 
