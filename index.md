@@ -13,7 +13,7 @@ title: "Jeff Kao"
     Links:
     <a href="https://www.linkedin.com/in/jeffreykao/" target="_blank">li</a> /
     <a href="https://twitter.com/j_ckao" target="_blank">tw</a> /
-    <a href="https://www.linkedin.com/in/jeffreykao/" target="_blank">ig</a> /
+    <a href="https://www.instagram.com/j_ckao/" target="_blank">ig</a> /
     <a href="https://soundcloud.com/j_ckao" target="_blank">sc</a>
   </p>
 </div>
