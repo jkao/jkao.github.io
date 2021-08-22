@@ -14,8 +14,8 @@ title: "Jeff Kao"
     <a href="https://www.linkedin.com/in/jeffreykao/" target="_blank">li</a> /
     <a href="https://twitter.com/j_ckao" target="_blank">tw</a> /
     <a href="https://www.instagram.com/j_ckao/" target="_blank">ig</a> /
-    <a href="https://soundcloud.com/j_ckao" target="_blank">sc</a>
-    <a href="/resume.pdf" target="_blank">cv</a> /
+    <a href="https://soundcloud.com/j_ckao" target="_blank">sc</a> /
+    <a href="/resume.pdf" target="_blank">cv</a>
   </p>
 </div>
 
