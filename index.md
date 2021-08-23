@@ -6,7 +6,7 @@ title: "Jeff Kao"
 # Jeff Kao
 
 <div class="row">
-  <p>I'm a staff engineer at <a href="https://radar.io/" target="_blank">Radar</a> in Brooklyn. I produce music and occasionally DJ.</p>
+  <p>I'm a staff engineer at <a href="https://radar.io/" target="_blank">Radar</a> based in LA. I produce music and occasionally DJ.</p>
   <p>I'm interested in music, languages, travel, and data.</p>
 
   <p>
