@@ -22,9 +22,9 @@ title: "Jeff Kao"
 <div class="row">
   <h2 class="small">Around the internet</h2>
   <ul>
-    <li><a href="https://archive.ph/jTPGi" target="_blank">How Radar adopted Terraform CDK</a></li>
     <li><a href="https://archive.is/9S3d0" target="_blank">Open-sourcing our Node.js S2 library</a></li>
     <li><a href="https://archive.is/9Kzqn" target="_blank">How These Software Engineers Make Clean Code a Priority</a></li>
     <li><a href="https://archive.is/5J5dv" target="_blank">Custom Partitions with Kinesis and Athena</a></li>
+    <li><a href="https://archive.ph/jTPGi" target="_blank">How Radar adopted Terraform CDK</a></li>
   </ul>
 </div>
