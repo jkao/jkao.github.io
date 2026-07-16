@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f2efdf">
+
+    {% seo %}
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | relative_url }}">
+    <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
+    <link rel="mask-icon" href="{{ '/safari-pinned-tab.svg' | relative_url }}" color="#315f83">
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }} — Writing" href="{{ '/writing/feed.xml' | absolute_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  </head>
+  <body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <div class="site-shell">
+      <!--
+      <header class="site-header">
+        <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Jeff Kao, home">JK</a>
+        <nav aria-label="Primary navigation">
+          <a{% if page.url == '/writing/' or page.collection == 'writing' %} aria-current="page"{% endif %} href="{{ '/writing/' | relative_url }}">Writing</a>
+          <a href="{{ '/writing/feed.xml' | relative_url }}">RSS</a>
+        </nav>
+      </header>
+      -->
+
+      <main id="content">
+        {{ content }}
+      </main>
+
+      <footer class="site-footer">
+        <p>&copy; {{ 'now' | date: '%Y' }} Jeff Kao</p>
+      </footer>
+    </div>
+  </body>
+</html>

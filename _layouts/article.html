@@ -1,0 +1,23 @@
+---
+layout: site
+body_class: article-page
+---
+
+<article class="article">
+  <header class="article-header">
+    <a class="back-link" href="{{ '/writing/' | relative_url }}">&larr; Writing</a>
+    <h1>{{ page.title }}</h1>
+    <div class="article-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {% if page.tags.size > 0 %}
+      <span aria-hidden="true">&middot;</span>
+      <span>{{ page.tags | join: ", " }}</span>
+      {% endif %}
+    </div>
+    {% if page.description %}<p class="article-description">{{ page.description }}</p>{% endif %}
+  </header>
+
+  <div class="prose">
+    {{ content }}
+  </div>
+</article>

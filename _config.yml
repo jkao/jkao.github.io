@@ -1,3 +1,39 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+url: "https://jeffkao.ca"
+baseurl: ""
+title: "Jeff Kao"
+description: "Software engineer, music producer, and occasional writer."
+lang: "en-US"
+timezone: "America/Los_Angeles"
+
+markdown: kramdown
+
+collections:
+  writing:
+    output: true
+    permalink: /writing/:name/
+    sort_by: date
+
+defaults:
+  - scope:
+      path: ""
+      type: writing
+    values:
+      layout: article
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+feed:
+  collections:
+    writing:
+      path: "/writing/feed.xml"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Makefile
+  - README.md
+  - scripts
+  - vendor

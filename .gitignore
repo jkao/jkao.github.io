@@ -4,3 +4,6 @@ drafts/
 _import/
 *.DS_Store
 .jekyll-cache
+.jekyll-metadata
+.bundle/
+vendor/
