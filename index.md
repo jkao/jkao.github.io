@@ -48,7 +48,7 @@ description: "Software engineer, music producer, and occasional writer based in 
 
   <ul class="external-list">
     <li><a href="https://corrode.dev/podcast/s05e08-radar/" rel="noopener noreferrer" target="_blank">Podcast on HorizonDB, a Rust-based geocoder and geo-database</a></li>
-    <li><a href="https://radar.com/blog/introducing-horizondb" rel="noopener noreferrer" target="_blank">How we replaced Elasticsearch and MongoDB with Rust and RocksDB</a></li>
+    <li><a href="https://radar.com/blog/high-performance-geocoding-in-rust" rel="noopener noreferrer" target="_blank">How we replaced Elasticsearch and MongoDB with Rust and RocksDB</a></li>
     <li><a href="https://archive.is/9S3d0" rel="noopener noreferrer" target="_blank">Open-sourcing our Node.js S2 library</a></li>
     <li><a href="https://archive.is/9Kzqn" rel="noopener noreferrer" target="_blank">How These Software Engineers Make Clean Code a Priority</a></li>
     <li><a href="https://archive.ph/jTPGi" rel="noopener noreferrer" target="_blank">How Radar adopted Terraform CDK</a></li>
