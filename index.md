@@ -1,7 +1,6 @@
 ---
 layout: site
 title: "Jeff Kao"
-description: "Software engineer, music producer, and occasional writer based in Los Angeles."
 ---
 
 <section class="intro" aria-labelledby="intro-title">
