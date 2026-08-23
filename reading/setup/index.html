@@ -1,0 +1,91 @@
+---
+layout: site
+title: Reading list setup
+description: Configure the browser bookmarklet, GitHub token, and encrypted reading vault.
+permalink: /reading/setup/
+---
+
+<header class="page-header tool-header">
+  <p class="eyebrow">Read it later</p>
+  <h1>Setup</h1>
+  <p class="lede">Connect this browser to the site repository, choose a vault password, and install the bookmarklet.</p>
+  <div class="link-list" aria-label="Reading list navigation">
+    <a href="{{ '/reading/' | relative_url }}">Reading list</a>
+    <a href="{{ '/reading/add/' | relative_url }}">Add an article</a>
+    <a href="#bookmarklet">Install bookmarklet</a>
+  </div>
+</header>
+
+<section class="section" aria-labelledby="credentials-heading">
+  <div class="section-heading">
+    <h2 id="credentials-heading">Browser credentials</h2>
+  </div>
+
+  <div class="tool-grid">
+    <form class="tool-form tool-panel" id="setup-form" novalidate>
+      <p class="form-intro">The token and optional remembered password are stored unencrypted in <code>localStorage</code> for jeffkao.ca. Any script running on this origin could read them. This tool sends the token only to GitHub’s API, but you should still use a dedicated, expiring token.</p>
+
+      <div class="form-field">
+        <label for="github-token">Fine-grained GitHub token</label>
+        <input id="github-token" name="github-token" type="password" autocomplete="off" spellcheck="false" aria-describedby="token-help token-saved-status">
+        <p class="field-help" id="token-help">Leave blank to keep using the token already remembered by this browser.</p>
+        <p class="field-help" id="token-saved-status"></p>
+      </div>
+
+      <div class="form-field">
+        <label for="vault-password">Vault password</label>
+        <input id="vault-password" name="vault-password" type="password" autocomplete="new-password" aria-describedby="password-help">
+        <p class="field-help" id="password-help">Choose it when creating the vault; enter the current password if the vault already exists. Setup verifies but does not rotate it, and there is no password recovery. Leave blank to reuse a remembered password.</p>
+      </div>
+
+      <div class="form-field">
+        <label for="vault-password-confirm">Confirm vault password</label>
+        <input id="vault-password-confirm" name="vault-password-confirm" type="password" autocomplete="new-password">
+      </div>
+
+      <div class="form-check">
+        <input id="remember-password" name="remember-password" type="checkbox" checked>
+        <label for="remember-password">Remember the vault password on this browser</label>
+      </div>
+
+      <div class="button-row">
+        <button class="button" id="save-settings" type="submit">Save and test settings</button>
+        <button class="button button--quiet" id="forget-settings" type="button">Forget this browser</button>
+      </div>
+
+      <p class="status" id="setup-status" role="status" aria-live="polite"></p>
+    </form>
+
+    <aside class="tool-panel prose" aria-labelledby="token-instructions-heading">
+      <h3 id="token-instructions-heading">Token permissions</h3>
+      <ol>
+        <li><a href="https://github.com/settings/personal-access-tokens/new?name=Jeff%20Kao%20reading%20list&amp;description=Write%20reading%20list%20entries%20from%20jeffkao.ca&amp;target_name=jkao&amp;expires_in=365&amp;contents=write" target="_blank" rel="noopener noreferrer">Create a fine-grained token on GitHub</a>.</li>
+        <li>Choose <strong>Only select repositories</strong> and select <code>jkao.github.io</code>.</li>
+        <li>Give it <strong>Contents: Read and write</strong>. No other permission is needed.</li>
+        <li>Copy it into the form. GitHub only displays it once.</li>
+      </ol>
+      <p>The permission applies to the whole repository, so use this dedicated, expiring token rather than a general-purpose one.</p>
+    </aside>
+  </div>
+</section>
+
+<section class="section" id="bookmarklet" aria-labelledby="bookmarklet-heading">
+  <div class="section-heading">
+    <h2 id="bookmarklet-heading">Bookmarklet</h2>
+  </div>
+
+  <div class="tool-panel bookmarklet-panel">
+    <p>Drag this button to the bookmarks bar in Chrome or the bookmarks toolbar in Firefox:</p>
+    <p><a class="button bookmarklet-link" id="bookmarklet-link" href="#bookmarklet">Save to reading list</a></p>
+    <p>Alternatively, copy the code, create a bookmark, and paste it into the bookmark’s URL field.</p>
+    <div class="copy-field">
+      <label for="bookmarklet-code">Bookmarklet code</label>
+      <textarea id="bookmarklet-code" rows="5" readonly spellcheck="false"></textarea>
+      <button class="button button--quiet" id="copy-bookmarklet" type="button">Copy bookmarklet</button>
+    </div>
+    <p class="field-help">Bookmarklets work on ordinary web pages, but browsers block them on internal pages such as <code>chrome://</code>, <code>about:</code>, extension stores, and some built-in PDF viewers.</p>
+    <p class="status" id="copy-status" role="status" aria-live="polite"></p>
+  </div>
+</section>
+
+<script type="module" src="{{ '/assets/js/reading-setup.js' | relative_url }}"></script>

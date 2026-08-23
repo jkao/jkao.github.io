@@ -1,0 +1,76 @@
+---
+layout: site
+title: Reading list
+description: Articles saved for later by Jeff Kao.
+permalink: /reading/
+---
+
+<header class="page-header tool-header">
+  <p class="eyebrow">Around the web</p>
+  <h1>Reading list</h1>
+  <p class="lede">Articles worth returning to, with their original and remembered links.</p>
+  <div class="link-list" aria-label="Reading list actions">
+    <a href="{{ '/reading/add/' | relative_url }}">Add an article</a>
+    <a href="{{ '/reading/setup/' | relative_url }}">Setup and bookmarklet</a>
+  </div>
+</header>
+
+<section class="section" aria-labelledby="public-reading-heading">
+  <div class="section-heading">
+    <h2 id="public-reading-heading">Public</h2>
+  </div>
+
+  {% assign reading_count = site.data.reading | size %}
+  {% if reading_count > 0 %}
+    <ol class="reading-list">
+      {% for reading_pair in site.data.reading reversed %}
+        {% assign item = reading_pair[1] %}
+        {% assign active_url = item.canonical_url | default: item.url %}
+        <li class="reading-item">
+          <article>
+            <div class="reading-item__heading">
+              <h3><a href="{{ active_url | escape }}" target="_blank" rel="noopener noreferrer">{{ item.title | escape }}</a></h3>
+              <span class="reading-state">{{ item.state | default: 'unread' | escape }}</span>
+            </div>
+            <p class="reading-meta">
+              <time datetime="{{ item.saved_at | date_to_xmlschema }}">Saved {{ item.saved_at | date: '%b %-d, %Y' }}</time>
+              {% if item.tags.size > 0 %}<span aria-hidden="true">·</span><span>{{ item.tags | join: ', ' | escape }}</span>{% endif %}
+            </p>
+            {% if item.note and item.note != '' %}<p class="reading-note">{{ item.note | escape }}</p>{% endif %}
+            <div class="reading-links">
+              <a href="{{ item.url | escape }}" target="_blank" rel="noopener noreferrer">Original</a>
+              {% if item.canonical_url and item.canonical_url != '' and item.canonical_url != item.url %}<a href="{{ item.canonical_url | escape }}" target="_blank" rel="noopener noreferrer">Canonical</a>{% endif %}
+              {% if item.archive_url and item.archive_url != '' %}<a href="{{ item.archive_url | escape }}" target="_blank" rel="noopener noreferrer">Archived copy</a>{% endif %}
+            </div>
+          </article>
+        </li>
+      {% endfor %}
+    </ol>
+  {% else %}
+    <p class="empty-state">No public articles saved yet. <a href="{{ '/reading/setup/' | relative_url }}">Install the bookmarklet</a> to add the first one.</p>
+  {% endif %}
+</section>
+
+<section class="section" aria-labelledby="private-reading-heading">
+  <div class="section-heading">
+    <h2 id="private-reading-heading">Password locked</h2>
+  </div>
+
+  <form class="unlock-form tool-panel" id="unlock-form">
+    <div class="form-field">
+      <label for="unlock-password">Vault password</label>
+      <input id="unlock-password" name="unlock-password" type="password" autocomplete="current-password" aria-describedby="unlock-help">
+      <p class="field-help" id="unlock-help">Leave blank to use the password remembered during setup.</p>
+    </div>
+    <div class="button-row">
+      <button class="button" id="unlock-vault" type="submit">Unlock private items</button>
+      <button class="button button--quiet" id="lock-vault" type="button" hidden>Lock</button>
+    </div>
+    <p class="status" id="unlock-status" role="status" aria-live="polite"></p>
+  </form>
+
+  <div id="private-reading-list" hidden></div>
+  <noscript><p class="empty-state">JavaScript is required to unlock the encrypted reading list.</p></noscript>
+</section>
+
+<script type="module" src="{{ '/assets/js/reading-list.js' | relative_url }}"></script>

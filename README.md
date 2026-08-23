@@ -49,6 +49,14 @@ Write the article below the second `---`. Preview it with `make drafts`, then ch
 make check
 ```
 
+## Reading list and bookmarklet
+
+The public reading list lives at `/reading/`. Its browser setup and draggable bookmarklet are at `/reading/setup/`, and the capture form is at `/reading/add/`.
+
+Setup requires a fine-grained GitHub token limited to this repository with `Contents: read and write`. The token is stored unencrypted in the browser's origin-wide local storage and must never be committed; any script running on the same origin could read it. Public saves create individual JSON files under `_data/reading/`. Password-locked saves update the encrypted `assets/data/reading-private.json` vault; the vault password can optionally be remembered by the browser.
+
+The design and component specimen is available at `/stylesheet/`.
+
 ## Protected legacy content
 
 The directories `archive/` and `in-loving-memory/` are intentionally independent of the modern site. Do not reformat, relocate, or apply the new layouts and styles to their files. Existing media, PDF, and legacy URLs should remain intact.

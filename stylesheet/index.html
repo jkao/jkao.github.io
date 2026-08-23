@@ -1,0 +1,323 @@
+---
+layout: site
+title: Stylesheet
+description: A living specimen of the typography, color, content, lists, and controls used on jeffkao.ca.
+permalink: /stylesheet/
+---
+
+<header class="page-header">
+  <p class="eyebrow">Design reference</p>
+  <h1>Stylesheet</h1>
+  <p class="lede">A living specimen of the type, color, content, lists, and controls used across this site.</p>
+  <p>This page uses the production stylesheet without page-specific overrides, so it also makes unfinished or browser-default styles easy to spot.</p>
+
+  <nav class="link-list" aria-label="Stylesheet sections">
+    <a href="#typography">Typography</a>
+    <a href="#prose">Prose</a>
+    <a href="#lists">Lists</a>
+    <a href="#media">Media</a>
+    <a href="#forms">Forms</a>
+    <a href="#components">Components</a>
+  </nav>
+</header>
+
+<section class="section" id="typography" aria-labelledby="typography-heading">
+  <div class="section-heading">
+    <h2 id="typography-heading">Typography</h2>
+    <a class="quiet-link" href="#content">Back to top</a>
+  </div>
+
+  <div class="prose">
+    <p class="eyebrow">Eyebrow text · Small but purposeful</p>
+    <p><code>h1</code> — the “Stylesheet” page title above</p>
+    <h2>Heading level two</h2>
+    <h3>Heading level three</h3>
+    <h4>Heading level four</h4>
+    <h5>Heading level five</h5>
+    <h6>Heading level six</h6>
+
+    <p class="lede">The lede introduces an idea with a little more size and air than the body copy around it.</p>
+    <p>A standard paragraph should stay comfortable through a few sentences. It can contain <strong>strong importance</strong>, <em>gentle emphasis</em>, <mark>highlighted text</mark>, an <abbr title="abbreviation">abbr.</abbr>, and <del>deleted</del> or <ins>inserted</ins> words.</p>
+    <p>This is a <a href="https://example.com/">standard link</a>, and this is a <a href="https://example.com/a-very-long-path-that-tests-how-links-wrap-within-a-narrow-reading-column">long link that may need to wrap inside the reading measure</a>.</p>
+    <p class="article-meta"><time datetime="2026-08-22">August 22, 2026</time><span aria-hidden="true">·</span><span>6 minute read</span><span aria-hidden="true">·</span><span>Design systems</span></p>
+  </div>
+</section>
+
+<section class="section" id="prose" aria-labelledby="prose-heading">
+  <div class="section-heading">
+    <h2 id="prose-heading">Long-form prose</h2>
+    <a class="quiet-link" href="#content">Back to top</a>
+  </div>
+
+  <article class="prose">
+    <h3>Readable text has rhythm</h3>
+    <p>A reading style has to work when the novelty wears off. Good measure, steady line-height, and visible hierarchy let an essay feel calm without making it anonymous. Inline code such as <code>git pull --rebase</code> should remain distinct without interrupting that rhythm.</p>
+
+    <blockquote>
+      <p>Design is the quiet work of deciding what deserves attention, then helping the reader find it.</p>
+    </blockquote>
+
+    <h4>A code sample</h4>
+    <pre><code>function saveForLater(article) {
+  return fetch("/reading/", {
+    method: "POST",
+    body: JSON.stringify(article)
+  });
+}</code></pre>
+
+    <hr>
+
+    <p>Text after a thematic break should feel clearly separated while remaining part of the same article.</p>
+  </article>
+</section>
+
+<section class="section" id="lists" aria-labelledby="lists-heading">
+  <div class="section-heading">
+    <h2 id="lists-heading">Lists and tabular data</h2>
+    <a class="quiet-link" href="#content">Back to top</a>
+  </div>
+
+  <div class="prose">
+    <h3>Unordered list</h3>
+    <ul>
+      <li>A short item</li>
+      <li>An item with enough copy to wrap and reveal the indentation and spacing of a list across more than one line</li>
+      <li>A nested group
+        <ul>
+          <li>First nested item</li>
+          <li>Second nested item</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>Ordered list</h3>
+    <ol>
+      <li>Capture the page.</li>
+      <li>Add a note and a few tags.</li>
+      <li>Return when there is time to read.</li>
+    </ol>
+
+    <h3>Definition list</h3>
+    <dl>
+      <dt><strong>Original</strong></dt>
+      <dd>The active link on the publisher’s website.</dd>
+      <dt><strong>Archive</strong></dt>
+      <dd>A remembered snapshot that may outlive the original URL.</dd>
+    </dl>
+
+    <h3>Table</h3>
+    <table>
+      <caption>Example reading-list states, including a long unbroken identifier</caption>
+      <thead>
+        <tr>
+          <th scope="col">State</th>
+          <th scope="col">Visibility</th>
+          <th scope="col">Identifier</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Unread</th>
+          <td>Public</td>
+          <td><code>public-reading-12</code></td>
+        </tr>
+        <tr>
+          <th scope="row">Reading</th>
+          <td>Private</td>
+          <td><code>private-vault-3</code></td>
+        </tr>
+        <tr>
+          <th scope="row">Finished</th>
+          <td>Public</td>
+          <td><code>finished-article-with-a-deliberately-long-unbroken-identifier-20260822</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="section" id="media" aria-labelledby="media-heading">
+  <div class="section-heading">
+    <h2 id="media-heading">Media</h2>
+    <a class="quiet-link" href="#content">Back to top</a>
+  </div>
+
+  <div class="prose">
+    <figure>
+      <img src="{{ '/archive/img/bridge.jpg' | relative_url }}" alt="Jeff Kao standing at a waterfront railing with the Manhattan Bridge behind him">
+      <figcaption>An image and caption inside a semantic <code>figure</code>.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="forms" aria-labelledby="forms-heading">
+  <div class="section-heading">
+    <h2 id="forms-heading">Forms and controls</h2>
+    <a class="quiet-link" href="#content">Back to top</a>
+  </div>
+
+  <p id="form-specimen-note">These controls are visual specimens. Their buttons do not submit or save data.</p>
+
+  <div class="tool-grid">
+    <form class="tool-form tool-panel" aria-describedby="form-specimen-note">
+      <p class="form-intro">A production-style panel combines standard controls with reusable field and layout classes.</p>
+
+      <fieldset>
+        <legend>Article details</legend>
+        <div class="tool-form">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="specimen-title">Title</label>
+              <input id="specimen-title" name="title" type="text" value="A useful article" autocomplete="off">
+            </div>
+
+            <div class="form-field">
+              <label for="specimen-state">Reading state</label>
+              <select id="specimen-state" name="state">
+                <option selected>Unread</option>
+                <option>Reading</option>
+                <option>Finished</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="specimen-url">URL <span class="label-optional">optional</span></label>
+            <input id="specimen-url" name="url" type="url" value="https://example.com/article" inputmode="url" aria-describedby="specimen-url-help">
+            <p class="field-help" id="specimen-url-help">Use the complete original or canonical address.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="specimen-password">Encryption password</label>
+            <input id="specimen-password" type="password" value="password" autocomplete="off" aria-describedby="specimen-password-help">
+            <p class="field-help" id="specimen-password-help">This unnamed specimen value is never submitted.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="specimen-note">Note</label>
+            <textarea id="specimen-note" name="note" rows="4">A short reminder about why this page is worth returning to.</textarea>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-fieldset">
+        <legend>Visibility</legend>
+        <div class="choice-grid">
+          <label class="choice-card" for="specimen-public">
+            <input id="specimen-public" name="specimen-visibility" type="radio" value="public" checked>
+            <span><strong>Public</strong><small>Visible to everyone on the reading page.</small></span>
+          </label>
+          <label class="choice-card" for="specimen-locked">
+            <input id="specimen-locked" name="specimen-visibility" type="radio" value="locked">
+            <span><strong>Password locked</strong><small>Stored in the encrypted public vault.</small></span>
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="form-check">
+        <input id="specimen-private" type="checkbox">
+        <label for="specimen-private">Remember this preference on this browser</label>
+      </div>
+
+      <div class="button-row">
+        <button class="button" type="button">Primary button</button>
+        <button class="button button--quiet" type="reset">Reset button</button>
+        <a class="button button--quiet" href="#forms">Quiet link button</a>
+        <button class="button" type="button" disabled>Disabled</button>
+      </div>
+    </form>
+
+    <aside class="tool-panel prose" aria-labelledby="form-guidance-heading">
+      <p class="eyebrow">Supporting panel</p>
+      <h3 id="form-guidance-heading">Clear guidance</h3>
+      <p>Tool layouts can pair a working surface with instructions, context, or a concise warning.</p>
+      <ul>
+        <li>Labels remain visible.</li>
+        <li>Help text stays close to its field.</li>
+        <li>Keyboard focus is easy to follow.</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section class="section" id="components" aria-labelledby="components-heading">
+  <div class="section-heading">
+    <h2 id="components-heading">Site components</h2>
+    <a class="quiet-link" href="#content">Back to top</a>
+  </div>
+
+  <h3>Article list</h3>
+  <ol class="article-list">
+    <li>
+      <a href="#components">How a small reading list becomes a useful archive</a>
+      <time datetime="2026-08-22">Aug 22, 2026</time>
+      <p>A two-line summary provides context without competing with the article title.</p>
+    </li>
+    <li>
+      <a href="#components">Notes on durable links</a>
+      <time datetime="2026-08-18">Aug 18, 2026</time>
+      <p>The same card component with a shorter title and description.</p>
+    </li>
+  </ol>
+
+  <h3>Reading list</h3>
+  <ol class="reading-list">
+    <li class="reading-item">
+      <article>
+        <div class="reading-item__heading">
+          <h3><a href="#components">A remembered article with original and archived links</a></h3>
+          <span class="reading-state">unread</span>
+        </div>
+        <p class="reading-meta"><time datetime="2026-08-22">Saved Aug 22, 2026</time><span aria-hidden="true">·</span><span>archives, design</span></p>
+        <p class="reading-note">A short personal note records why the article seemed useful when it was saved.</p>
+        <div class="reading-links">
+          <a href="#components">Original</a>
+          <a href="#components">Archived copy</a>
+        </div>
+      </article>
+    </li>
+    <li class="reading-item">
+      <article>
+        <div class="reading-item__heading">
+          <h3><a href="#components">A second reading-list item without a note or archived copy</a></h3>
+          <span class="reading-state">read</span>
+        </div>
+        <p class="reading-meta"><time datetime="2026-08-18">Saved Aug 18, 2026</time><span aria-hidden="true">·</span><span>software</span></p>
+        <div class="reading-links">
+          <a href="#components">Original</a>
+        </div>
+      </article>
+    </li>
+  </ol>
+
+  <h3>External links</h3>
+  <ul class="external-list">
+    <li><a href="https://example.com/one" rel="noopener noreferrer">A saved article on another website</a></li>
+    <li><a href="https://example.com/two" rel="noopener noreferrer">A second external destination with a longer, more descriptive title</a></li>
+  </ul>
+
+  <h3>Bookmarklet and copy field</h3>
+  <div class="tool-panel bookmarklet-panel">
+    <p>Drag-style bookmarklet links use the primary link-button treatment:</p>
+    <p><a class="button bookmarklet-link" href="#components">Save to reading list</a></p>
+    <div class="copy-field">
+      <label for="specimen-bookmarklet">Bookmarklet code</label>
+      <textarea id="specimen-bookmarklet" rows="3" readonly spellcheck="false">javascript:(()=&gt;{window.open(location.href)})()</textarea>
+      <button class="button button--quiet" type="button">Copy bookmarklet</button>
+    </div>
+  </div>
+
+  <h3>Notices and status</h3>
+  <div class="tool-form" aria-label="Message states">
+    <p class="notice">A neutral notice provides context before an action.</p>
+    <p class="status" data-state="working">Working status: saving the article…</p>
+    <p class="status" data-state="success">Success status: the article was saved.</p>
+    <p class="status" data-state="error">Error status: the vault could not be unlocked.</p>
+  </div>
+
+  <h3>Empty state</h3>
+  <p class="empty-state">Nothing saved yet. New items will appear here.</p>
+
+  <h3>Color scheme</h3>
+  <p class="empty-state">The production stylesheet currently declares a light color scheme only. This specimen does not simulate a dark theme.</p>
+</section>

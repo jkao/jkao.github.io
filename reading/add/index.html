@@ -1,0 +1,106 @@
+---
+layout: site
+title: Add to reading list
+description: Save an article to the public or encrypted reading list.
+permalink: /reading/add/
+---
+
+<header class="page-header tool-header">
+  <p class="eyebrow">Read it later</p>
+  <h1>Add an article</h1>
+  <p class="lede">Review what the bookmarklet captured, then save it publicly or in the encrypted vault.</p>
+  <div class="link-list" aria-label="Reading list navigation">
+    <a href="{{ '/reading/' | relative_url }}">Reading list</a>
+    <a href="{{ '/reading/setup/' | relative_url }}">Setup and bookmarklet</a>
+  </div>
+</header>
+
+<section class="section tool-section" aria-labelledby="article-form-heading">
+  <div class="section-heading">
+    <h2 id="article-form-heading">Article details</h2>
+  </div>
+
+  <div class="notice" id="setup-notice" hidden>
+    This browser does not have a GitHub token yet. <a href="{{ '/reading/setup/' | relative_url }}">Complete setup first</a>.
+  </div>
+
+  <form class="tool-form tool-panel" id="article-form" novalidate>
+    <div class="form-field">
+      <label for="article-title">Title</label>
+      <input id="article-title" name="title" type="text" required maxlength="500" autocomplete="off">
+    </div>
+
+    <div class="form-field">
+      <label for="article-url">Original URL</label>
+      <input id="article-url" name="url" type="url" required inputmode="url" spellcheck="false">
+    </div>
+
+    <div class="form-field">
+      <label for="canonical-url">Canonical URL <span class="label-optional">optional</span></label>
+      <input id="canonical-url" name="canonical-url" type="url" inputmode="url" spellcheck="false" aria-describedby="canonical-help">
+      <p class="field-help" id="canonical-help">Some publishers identify a cleaner permanent URL. The original URL is always kept too.</p>
+    </div>
+
+    <div class="form-field">
+      <label for="article-note">Note <span class="label-optional">optional</span></label>
+      <textarea id="article-note" name="note" rows="5" maxlength="4000"></textarea>
+    </div>
+
+    <div class="form-row">
+      <div class="form-field">
+        <label for="article-tags">Tags <span class="label-optional">optional</span></label>
+        <input id="article-tags" name="tags" type="text" placeholder="rust, databases" autocomplete="off" aria-describedby="tags-help">
+        <p class="field-help" id="tags-help">Separate tags with commas.</p>
+      </div>
+
+      <div class="form-field">
+        <label for="reading-state">Reading state</label>
+        <select id="reading-state" name="state">
+          <option value="unread" selected>Unread</option>
+          <option value="reading">Reading</option>
+          <option value="read">Read</option>
+        </select>
+      </div>
+    </div>
+
+    <fieldset class="form-fieldset">
+      <legend>Visibility</legend>
+      <div class="choice-grid">
+        <label class="choice-card" for="visibility-public">
+          <input id="visibility-public" name="visibility" type="radio" value="public" checked>
+          <span><strong>Public</strong><small>Rendered on the reading-list page.</small></span>
+        </label>
+        <label class="choice-card" for="visibility-private">
+          <input id="visibility-private" name="visibility" type="radio" value="private">
+          <span><strong>Password locked</strong><small>Stored only inside the encrypted public vault.</small></span>
+        </label>
+      </div>
+    </fieldset>
+
+    <div class="form-field" id="private-password-field" hidden>
+      <label for="private-password">Vault password</label>
+      <input id="private-password" name="private-password" type="password" autocomplete="current-password" aria-describedby="private-password-help">
+      <p class="field-help" id="private-password-help">Leave blank to use the password remembered during setup.</p>
+    </div>
+
+    <div class="form-field">
+      <label for="archive-url">Exact archive URL <span class="label-optional">optional</span></label>
+      <input id="archive-url" name="archive-url" type="url" inputmode="url" spellcheck="false" placeholder="https://web.archive.org/web/…" aria-describedby="archive-help">
+      <p class="field-help" id="archive-help">Use Wayback below, or paste a permanent <code>archive.is</code>/<code>archive.ph</code> snapshot URL. Archiving a private URL makes that page public at the archive provider.</p>
+      <div class="button-row button-row--compact">
+        <a class="button button--quiet" id="find-archive-link" href="https://web.archive.org/" target="_blank" rel="noopener noreferrer">Find existing copy</a>
+        <a class="button button--quiet" id="save-archive-link" href="https://web.archive.org/" target="_blank" rel="noopener noreferrer">Save with Wayback</a>
+      </div>
+    </div>
+
+    <div class="button-row">
+      <button class="button" id="save-article" type="submit">Save article</button>
+      <a class="button button--quiet" href="{{ '/reading/' | relative_url }}">Cancel</a>
+    </div>
+
+    <p class="status" id="save-status" role="status" aria-live="polite"></p>
+    <p id="save-result"></p>
+  </form>
+</section>
+
+<script type="module" src="{{ '/assets/js/reading-add.js' | relative_url }}"></script>

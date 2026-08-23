@@ -35,6 +35,11 @@
 
       <footer class="site-footer">
         <p>&copy; {{ 'now' | date: '%Y' }} Jeff Kao</p>
+        <nav aria-label="Site links">
+          <a href="{{ '/reading/' | relative_url }}">Reading</a>
+          <a href="{{ '/reading/setup/' | relative_url }}">Bookmarklet</a>
+          <a href="{{ '/stylesheet/' | relative_url }}">Stylesheet</a>
+        </nav>
       </footer>
     </div>
   </body>
