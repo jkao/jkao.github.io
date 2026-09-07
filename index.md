@@ -1,6 +1,10 @@
 ---
 layout: site
-title: "Jeff Kao"
+title: "Principal Engineer at Radar"
+description: "Jeff Kao is a principal engineer at Radar with interests in music, languages, travel, and data. Find his engineering talks, articles, and social profiles."
+author:
+  name: "Jeff Kao"
+  url: "https://jeffkao.ca/"
 body_class: home-page
 ---
 
