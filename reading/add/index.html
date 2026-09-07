@@ -10,8 +10,8 @@ permalink: /reading/add/
   <h1>Add an article</h1>
   <p class="lede">Review what the bookmarklet captured, then save it publicly or in the encrypted vault.</p>
   <div class="link-list" aria-label="Reading list navigation">
-    <a href="{{ '/reading/' | relative_url }}">Reading list</a>
-    <a href="{{ '/reading/setup/' | relative_url }}">Setup and bookmarklet</a>
+    <a href="{{ '/reading/' | relative_url }}" target="_blank" rel="noopener noreferrer">Reading list</a>
+    <a href="{{ '/reading/setup/' | relative_url }}" target="_blank" rel="noopener noreferrer">Setup and bookmarklet</a>
   </div>
 </header>
 
@@ -21,7 +21,7 @@ permalink: /reading/add/
   </div>
 
   <div class="notice" id="setup-notice" hidden>
-    This browser does not have a GitHub token yet. <a href="{{ '/reading/setup/' | relative_url }}">Complete setup first</a>.
+    This browser does not have a GitHub token yet. <a href="{{ '/reading/setup/' | relative_url }}" target="_blank" rel="noopener noreferrer">Complete setup first</a>.
   </div>
 
   <form class="tool-form tool-panel" id="article-form" novalidate>
@@ -95,7 +95,7 @@ permalink: /reading/add/
 
     <div class="button-row">
       <button class="button" id="save-article" type="submit">Save article</button>
-      <a class="button button--quiet" href="{{ '/reading/' | relative_url }}">Cancel</a>
+      <a class="button button--quiet" href="{{ '/reading/' | relative_url }}" target="_blank" rel="noopener noreferrer">Cancel</a>
     </div>
 
     <p class="status" id="save-status" role="status" aria-live="polite"></p>

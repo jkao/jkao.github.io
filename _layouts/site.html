@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f2efdf">
+    <meta name="theme-color" content="#f6f5ee">
 
     {% seo %}
 
@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | relative_url }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | relative_url }}">
     <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
-    <link rel="mask-icon" href="{{ '/safari-pinned-tab.svg' | relative_url }}" color="#315f83">
+    <link rel="mask-icon" href="{{ '/safari-pinned-tab.svg' | relative_url }}" color="#42633f">
     <link rel="alternate" type="application/atom+xml" title="{{ site.title }} — Writing" href="{{ '/writing/feed.xml' | absolute_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
   </head>
@@ -21,10 +21,10 @@
     <div class="site-shell">
       <!--
       <header class="site-header">
-        <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Jeff Kao, home">JK</a>
+        <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Jeff Kao, home" target="_blank" rel="noopener noreferrer">JK</a>
         <nav aria-label="Primary navigation">
-          <a{% if page.url == '/writing/' or page.collection == 'writing' %} aria-current="page"{% endif %} href="{{ '/writing/' | relative_url }}">Writing</a>
-          <a href="{{ '/writing/feed.xml' | relative_url }}">RSS</a>
+          <a{% if page.url == '/writing/' or page.collection == 'writing' %} aria-current="page"{% endif %} href="{{ '/writing/' | relative_url }}" target="_blank" rel="noopener noreferrer">Writing</a>
+          <a href="{{ '/writing/feed.xml' | relative_url }}" target="_blank" rel="noopener noreferrer">RSS</a>
         </nav>
       </header>
       -->
@@ -37,9 +37,9 @@
         <p>&copy; {{ 'now' | date: '%Y' }} Jeff Kao</p>
         {% unless page.url == '/' %}
           <nav aria-label="Site links">
-            <a href="{{ '/reading/' | relative_url }}">Reading</a>
-            <a href="{{ '/reading/setup/' | relative_url }}">Bookmarklet</a>
-            <a href="{{ '/stylesheet/' | relative_url }}">Stylesheet</a>
+            <a href="{{ '/reading/' | relative_url }}" target="_blank" rel="noopener noreferrer">Reading</a>
+            <a href="{{ '/reading/setup/' | relative_url }}" target="_blank" rel="noopener noreferrer">Bookmarklet</a>
+            <a href="{{ '/stylesheet/' | relative_url }}" target="_blank" rel="noopener noreferrer">Stylesheet</a>
           </nav>
         {% endunless %}
       </footer>

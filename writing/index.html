@@ -16,7 +16,7 @@ permalink: /writing/
 <ol class="article-list article-list--full">
   {% for article in articles %}
   <li>
-    <a href="{{ article.url | relative_url }}">{{ article.title }}</a>
+    <a href="{{ article.url | relative_url }}" target="_blank" rel="noopener noreferrer">{{ article.title }}</a>
     <time datetime="{{ article.date | date_to_xmlschema }}">{{ article.date | date: "%b %-d, %Y" }}</time>
     {% if article.description %}<p>{{ article.description }}</p>{% endif %}
   </li>

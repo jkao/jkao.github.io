@@ -10,8 +10,8 @@ permalink: /reading/
   <h1>Reading list</h1>
   <p class="lede">Articles worth returning to, with their original and remembered links.</p>
   <div class="link-list" aria-label="Reading list actions">
-    <a href="{{ '/reading/add/' | relative_url }}">Add an article</a>
-    <a href="{{ '/reading/setup/' | relative_url }}">Setup and bookmarklet</a>
+    <a href="{{ '/reading/add/' | relative_url }}" target="_blank" rel="noopener noreferrer">Add an article</a>
+    <a href="{{ '/reading/setup/' | relative_url }}" target="_blank" rel="noopener noreferrer">Setup and bookmarklet</a>
   </div>
 </header>
 
@@ -47,7 +47,7 @@ permalink: /reading/
       {% endfor %}
     </ol>
   {% else %}
-    <p class="empty-state">No public articles saved yet. <a href="{{ '/reading/setup/' | relative_url }}">Install the bookmarklet</a> to add the first one.</p>
+    <p class="empty-state">No public articles saved yet. <a href="{{ '/reading/setup/' | relative_url }}" target="_blank" rel="noopener noreferrer">Install the bookmarklet</a> to add the first one.</p>
   {% endif %}
 </section>
 
