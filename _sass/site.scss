@@ -818,7 +818,18 @@ button:disabled:hover {
   font-size: 0.8125rem;
 }
 
-.home-address span {
+.home-address a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-address a:hover,
+.home-address a:focus-visible {
+  text-decoration: underline;
+}
+
+.home-address span,
+.home-address a[aria-current="page"] {
   color: var(--primary-dark);
 }
 

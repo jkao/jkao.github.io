@@ -9,7 +9,11 @@ body_class: home-page
 ---
 
 <section class="intro" aria-labelledby="intro-title">
-  <p class="home-address">jeffkao.ca <span aria-hidden="true">/ ~</span></p>
+  <nav class="home-address" aria-label="Breadcrumb">
+    <a href="{{ '/' | relative_url }}">jeffkao.ca</a>
+    <span aria-hidden="true">/</span>
+    <a href="{{ '/' | relative_url }}" aria-label="Home" aria-current="page">~</a>
+  </nav>
   <h1 id="intro-title">jeff kao</h1>
   <p class="lede">Principal engineer at <a href="https://radar.com/" rel="noopener noreferrer" target="_blank">Radar</a>.</p>
   <p>I'm interested in music, languages, travel, and data.</p>
